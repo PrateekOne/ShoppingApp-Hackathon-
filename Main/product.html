@@ -1,0 +1,3914 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Merriweather Sans:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Viaoda Libre:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Voltaire:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Asar:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Viga:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Albert Sans:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Verdana:wght@400&display=swap"
+    />
+
+    <style>
+      body {
+        
+  margin: 0;
+  line-height: normal;
+}
+.men-card-1:hover,.men-card-41:hover,.men-card-2:hover,.men-card-7:hover,.men-card-5:hover,.men-card-6:hover,.men-card-31:hover,.men-card-81:hover,.men-card-91:hover,.men-card-10:hover,.men-card-11:hover,.men-card-12:hover{
+  transform: scale(1.1);
+}
+:root {
+  /* fonts */
+  --font-viga: Viga;
+  --font-roboto: Roboto;
+  --app-m10: Montserrat;
+  --font-asar: Asar;
+  --font-poppins: Poppins;
+  --font-voltaire: Voltaire;
+  --font-viaoda-libre: "Viaoda Libre";
+  --font-merriweather-sans: "Merriweather Sans";
+  --font-verdana: Verdana;
+  --font-albert-sans: "Albert Sans";
+
+  /* font sizes */
+  --font-size-xl: 20px;
+  --font-size-base: 16px;
+  --font-size-sm: 14px;
+  --app-m10-size: 10px;
+  --l-size: 12px;
+  --font-size-lg: 18px;
+  --font-size-mid: 17px;
+  --font-size-31xl: 50px;
+  --font-size-21xl: 40px;
+  --font-size-11xl: 30px;
+  --font-size-lgi: 19px;
+  --font-size-36xl: 55px;
+
+  /* Colors */
+  --color-black: #000;
+  --white: #fff;
+  --medium-gray2: #808488;
+  --color-gray-100: #172328;
+  --color-gray-200: #131313;
+  --color-gray-600: #001923;
+  --color-gray-300: #07161d;
+  --color-gray-400: rgba(255, 255, 255, 0.5);
+  --color-gray-500: rgba(255, 255, 255, 0.8);
+  --lite-black-grey: #a4a9b3;
+  --medium-lecture: #fe735c;
+  --shades-of-black-grey4: #bbb;
+  --dark-bag: #21003d;
+  --color-darkslategray-100: #484848;
+  --color-darkslategray-300: #3b4a4f;
+  --color-darkslategray-200: #264653;
+  --color-darkslategray-400: #333;
+  --color-gainsboro-100: #d9d9d9;
+  --color-gainsboro-200: rgba(217, 217, 217, 0.31);
+  --color-firebrick: #c10000;
+  --color-cadetblue: #2e96ad;
+
+  /* Gaps */
+  --gap-xl: 20px;
+  --gap-lg-5: 18.5px;
+  --gap-lgi: 19px;
+  --gap-83xl: 102px;
+  --gap-32xl: 51px;
+  --gap-xs: 12px;
+  --gap-xs-5: 11.5px;
+  --gap-3xs: 10px;
+  --gap-5xl-4: 24.4px;
+  --gap-22xl-2: 41.2px;
+  --gap-15xl-1: 34.1px;
+  --gap-4xs-2: 8.2px;
+  --gap-6xs-5: 6.5px;
+  --gap-7xs-5: 5.5px;
+  --gap-3xs-5: 9.5px;
+  --gap-10xs-8: 2.8px;
+  --gap-3xs-6: 9.6px;
+  --gap-mini-7: 14.7px;
+  --gap-5xs: 8px;
+  --gap-17xl-1: 36.1px;
+  --gap-lg: 18px;
+  --gap-10xs: 3px;
+  --gap-5xs-1: 7.1px;
+  --gap-2xs-1: 10.1px;
+
+  /* Paddings */
+  --padding-34xl: 53px;
+  --padding-255xl: 274px;
+  --padding-11xl-6: 30.6px;
+  --padding-259xl: 278px;
+  --padding-120xl: 139px;
+  --padding-118xl: 137px;
+  --padding-xl: 20px;
+  --padding-12xs: 1px;
+  --padding-26xl: 45px;
+  --padding-sm: 14px;
+  --padding-4xs: 9px;
+  --padding-40xl: 59px;
+  --padding-5xl-8: 24.8px;
+  --padding-9xs: 4px;
+  --padding-4xs-2: 8.2px;
+  --padding-5xs: 8px;
+  --padding-4xs-3: 8.3px;
+  --padding-12xs-1: 0.1px;
+  --padding-xs: 12px;
+  --padding-220xl-5: 239.5px;
+  --padding-100xl: 119px;
+  --padding-6xs: 7px;
+  --padding-smi: 13px;
+  --padding-4xl-7: 23.7px;
+  --padding-35xl: 54px;
+  --padding-lgi: 19px;
+  --padding-mini: 15px;
+  --padding-base: 16px;
+  --padding-3xl: 22px;
+  --padding-13xl: 32px;
+  --padding-8xs: 5px;
+  --padding-8xs-7: 4.7px;
+  --padding-8xs-8: 4.8px;
+  --padding-lg: 18px;
+  --padding-7xs: 6px;
+  --padding-7xs-3: 5.3px;
+  --padding-mid-6: 17.6px;
+  --padding-7xs-9: 5.9px;
+  --padding-7xl: 26px;
+  --padding-8xl: 27px;
+  --padding-7xs-1: 5.1px;
+  --padding-xl-1: 20.1px;
+  --padding-6xs-1: 6.1px;
+  --padding-mid: 17px;
+  --padding-base-5: 16.5px;
+  --padding-2xl-9: 21.9px;
+  --padding-base-4: 15.4px;
+  --padding-2xs: 11px;
+  --padding-3xl-1: 22.1px;
+  --padding-10xs: 3px;
+
+  /* Border radiuses */
+  --br-lgi-5: 19.5px;
+  --br-7xs: 6px;
+  --br-3xs: 10px;
+  --br-2xl: 21px;
+  --br-xl: 20px;
+  --br-4xs: 9px;
+  --br-6xl-5: 25.5px;
+}
+.top-bar2 {
+  height: 80px;
+  width: 110%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--white);
+}
+.fi-br-search-icon1,
+.menu-01-icon1 {
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.menu-01-icon1 {
+  height: 62px;
+  width: 62px;
+  min-height: 62px;
+}
+.fi-br-search-icon1 {
+  width: 45px;
+  height: 45px;
+}
+.fi-br-search-container {
+  height: 51px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-7xs) var(--padding-10xs) 0 0;
+  box-sizing: border-box;
+}
+.user-01-icon1 {
+  width: 54px;
+  height: 54px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.user-01-wrapper {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-7xs) var(--padding-10xs) 0 0;
+  box-sizing: border-box;
+}
+.fi-br-shopping-cart-icon1 {
+  width: 46px;
+  height: 46px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.fi-br-shopping-cart-container {
+  height: 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-7xs) var(--padding-9xs) 0 0;
+  box-sizing: border-box;
+}
+.home-05-icon {
+  width: 54px;
+  height: 54px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  mix-blend-mode: normal;
+  z-index: 1;
+}
+.home-05-wrapper,
+.menu-01-parent {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.home-05-wrapper {
+  height: 59px;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-8xs) 0 0;
+  box-sizing: border-box;
+}
+.menu-01-parent {
+  flex: 1;
+  flex-direction: row;
+  padding: 0 var(--padding-xl) 0 0;
+  gap: 14px;
+}
+.menu-01-parent,
+.output-aggregator,
+.seamless-shopping-logo1 {
+  display: flex;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.output-aggregator {
+  height: 70px;
+  width: 393.2px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) 0 0;
+}
+.seamless-shopping-logo1 {
+  margin: 0;
+  width: 723px;
+  height: 86px;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  background: linear-gradient(
+    192.33deg,
+    #0a001c,
+    #0a001c 0.01%,
+    #28007d 48.4%,
+    #cc00d0 97.4%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  align-items: center;
+  flex-shrink: 0;
+  white-space: nowrap;
+  padding-right: var(--padding-xl);
+  z-index: 1;
+}
+.seamless-shopping-logo-wrapper {
+  width: 585.2px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.sign-in1 {
+  height: 28.5px;
+  position: relative;
+  font-weight: 900;
+  display: inline-block;
+  flex-shrink: 0;
+  min-width: 62px;
+  white-space: nowrap;
+  box-sizing: border-box;
+  padding-right: 0;
+  z-index: 1;
+}
+.sign-in-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 27px 0 0;
+  font-size: var(--font-size-base);
+  font-family: var(--font-poppins);
+}
+.bg1,
+.sign-up1 {
+  position: relative;
+}
+.bg1 {
+  height: 66.4px;
+  width: 180.3px;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-black);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15);
+  display: none;
+}
+.sign-up1 {
+  flex: 1;
+  font-size: var(--font-size-base);
+  line-height: 100%;
+  font-family: var(--font-poppins);
+  color: var(--white);
+  text-align: center;
+  z-index: 1;
+}
+.button-wrapper,
+.button1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.button1 {
+  cursor: pointer;
+  border: 0;
+  padding: 23.700000000000003px var(--padding-35xl) 23.700000000000003px
+    53.40000000000009px;
+  background-color: var(--color-black);
+  align-self: stretch;
+  border-radius: var(--br-3xs);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15);
+  flex-direction: row;
+  white-space: nowrap;
+  z-index: 1;
+}
+.button1:hover {
+  background-color: var(--color-darkslategray-400);
+}
+.button-wrapper {
+  width: 180.3px;
+  flex-direction: column;
+  padding: var(--padding-6xs) 0 0;
+  box-sizing: border-box;
+}
+.catagory-item,
+.logic-operator {
+  position: relative;
+  max-width: 100%;
+}
+.logic-operator {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-8xs) var(--padding-8xs) var(--padding-6xs);
+  box-sizing: border-box;
+  gap: 68.79999999999973px;
+  text-align: left;
+  font-size: var(--font-size-36xl);
+  color: var(--color-darkslategray-100);
+  font-family: var(--font-albert-sans);
+}
+.catagory-item {
+  height: 135px;
+  width: 1440px;
+  border-radius: var(--br-3xs);
+  background-color: var(--white);
+  display: none;
+}
+.component-52-item {
+  width: 91px;
+  height: 91.5px;
+  position: relative;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.electronics6 {
+  align-self: stretch;
+  position: relative;
+  line-height: 16px;
+}
+.component-521 {
+  margin-top: -2.5px;
+  height: 116px;
+  width: 91px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-6xs-5);
+}
+.unsplash-3q3tsj01nc-icon1 {
+  width: 91px;
+  height: 91.5px;
+  position: relative;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.electronics7 {
+  align-self: stretch;
+  position: relative;
+  line-height: 16px;
+}
+.component-531 {
+  margin-top: -2.5px;
+  height: 116px;
+  width: 91px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-6xs-5);
+}
+.unsplashgcdjllzoklo-icon1 {
+  width: 91px;
+  height: 91.5px;
+  position: relative;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.electronics8 {
+  align-self: stretch;
+  position: relative;
+  line-height: 16px;
+}
+.component-541 {
+  margin-top: -2.5px;
+  height: 116px;
+  width: 91px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-6xs-5);
+}
+.unsplashxpjyl0l5ii8-icon1 {
+  width: 91px;
+  height: 91.5px;
+  position: relative;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.electronics9 {
+  align-self: stretch;
+  position: relative;
+  line-height: 16px;
+}
+.component-552 {
+  margin-top: -2.5px;
+  height: 116px;
+  width: 91px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-6xs-5);
+}
+.unsplashoyye4g-i5zq-icon1 {
+  width: 91px;
+  height: 91.5px;
+  position: relative;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.electronics10 {
+  align-self: stretch;
+  position: relative;
+  line-height: 16px;
+}
+.component-553 {
+  margin-top: -2.5px;
+  height: 116px;
+  width: 91px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-6xs-5);
+}
+.unsplashpxm8aejbzvk-icon1 {
+  width: 91px;
+  height: 91.5px;
+  position: relative;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.electronics11 {
+  align-self: stretch;
+  position: relative;
+  line-height: 16px;
+}
+.component-561 {
+  margin-top: -2.5px;
+  height: 116px;
+  width: 91px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-6xs-5);
+}
+.catagory-wrapper,
+.catagory1,
+.component-52-group {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.component-52-group {
+  height: 111px;
+  flex: 1;
+  overflow-x: auto;
+  justify-content: space-between;
+  padding: 0 var(--padding-220xl-5);
+  gap: var(--gap-xl);
+  z-index: 1;
+}
+.catagory-wrapper,
+.catagory1 {
+  justify-content: flex-start;
+}
+.catagory1 {
+  flex: 1;
+  border-radius: var(--br-3xs);
+  background-color: var(--white);
+  padding: var(--padding-xs) 0;
+}
+.catagory-wrapper {
+  align-self: stretch;
+  padding: 0 0 var(--padding-xs);
+}
+.frame-child24 {
+  height: 111px;
+  width: 1440px;
+  position: relative;
+  background-color: var(--color-gray-600);
+  display: none;
+  max-width: 100%;
+}
+.frame-child25 {
+  position: absolute;
+  top: 9px;
+  left: 0;
+  border: 3px solid var(--white);
+  box-sizing: border-box;
+  width: 840px;
+  height: 93px;
+  z-index: 1;
+}
+.mens-wear {
+  margin: 0;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 175px;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  width: 605px;
+  z-index: 2;
+}
+.rectangle-parent4 {
+  height: 130px;
+  flex: 1;
+  position: relative;
+  max-width: calc(100% - 563px);
+}
+.winter-collection {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-36xl);
+  font-family: var(--font-verdana);
+  color: var(--white);
+  text-align: left;
+  display: inline-block;
+  max-width: 100%;
+  z-index: 1;
+}
+.frame-child26,
+.winter-collection-parent {
+  border: 3px solid var(--white);
+  max-width: 100%;
+}
+.frame-child26 {
+  height: 90px;
+  width: 543px;
+  position: relative;
+  box-sizing: border-box;
+  display: none;
+}
+.winter-collection-parent {
+  cursor: pointer;
+  padding: var(--padding-xs) var(--padding-xs) var(--padding-2xs)
+    var(--padding-mini);
+  background-color: transparent;
+  align-self: stretch;
+  flex-direction: row;
+  z-index: 2;
+}
+.frame-wrapper9,
+.rectangle-parent3,
+.winter-collection-parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.frame-wrapper9 {
+  width: 543px;
+  flex-direction: column;
+  padding: 10px 0 0;
+  max-width: calc(100% - 860px);
+  flex-shrink: 0;
+}
+.rectangle-parent3 {
+  align-self: stretch;
+  height: 111px;
+  background-color: var(--color-gray-600);
+  flex-direction: row;
+  padding: 0 var(--padding-mid) var(--padding-2xs) var(--padding-xl);
+  gap: var(--gap-xl);
+  max-width: 100%;
+  text-align: left;
+  font-size: 80px;
+  color: var(--white);
+  font-family: var(--font-viaoda-libre);
+}
+.men-card-1-child {
+  width: 417.7px;
+  height: 508.4px;
+  position: relative;
+  border-radius: var(--br-xl);
+  display: none;
+  max-width: 100%;
+}
+.men-card-1-item,
+.relaxed-sweatshirt {
+  align-self: stretch;
+  position: relative;
+  z-index: 1;
+}
+.men-card-1-item {
+  height: 387.8px;
+  border-radius: var(--br-xl);
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.relaxed-sweatshirt {
+  letter-spacing: 0.03em;
+}
+.frame-child27,
+.frame-child28,
+.frame-child29 {
+  height: 14.1px;
+  width: 16.5px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-gray-200);
+  border: 0 solid var(--white);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.frame-child28,
+.frame-child29 {
+  background-color: var(--color-cadetblue);
+}
+.frame-child29 {
+  background-color: var(--white);
+}
+.ellipse-parent5 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 7.099999999999909px;
+}
+.frame-child30 {
+  height: 35.2px;
+  width: 106.2px;
+  position: relative;
+  border-radius: var(--br-4xs);
+  background-color: var(--color-gray-300);
+  display: none;
+}
+.div17 {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-xl);
+  letter-spacing: 0.03em;
+  font-weight: 600;
+  font-family: var(--app-m10);
+  color: var(--white);
+  text-align: left;
+  white-space: nowrap;
+  z-index: 2;
+}
+.rectangle-parent5 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-7xs) var(--padding-mid) 5.100000000000023px
+    var(--padding-base-5);
+  background-color: var(--color-gray-300);
+  align-self: stretch;
+  border-radius: var(--br-4xs);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 1;
+}
+.calendar:hover,
+.data-aggregator1:hover,
+.data-aggregator2:hover,
+.error-collector1:hover,
+.error-collector2:hover,
+.error-collector:hover,
+.rectangle-parent10:hover,
+.rectangle-parent5:hover,
+.rectangle-parent6:hover,
+.rectangle-parent7:hover,
+.rectangle-parent8:hover,
+.rectangle-parent9:hover {
+  background-color: var(--color-darkslategray-300);
+}
+.frame-parent16,
+.relaxed-sweatshirt-parent {
+  width: 106.2px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.relaxed-sweatshirt-parent {
+  width: 204.1px;
+  gap: var(--gap-10xs);
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+}
+.frame-child31 {
+  width: 38.2px;
+  flex: 1;
+  position: relative;
+  max-height: 100%;
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+  z-index: 1;
+}
+.frame-wrapper11 {
+  height: 78.1px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-8xs) 0 0;
+  box-sizing: border-box;
+}
+.frame-parent15,
+.men-card-1-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.frame-parent15 {
+  flex: 1;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.men-card-1-inner {
+  align-self: stretch;
+  justify-content: flex-end;
+  padding: 0 var(--padding-3xl);
+  box-sizing: border-box;
+}
+.men-card-1,
+.rectangle-icon {
+  border-radius: var(--br-xl);
+  max-width: 100%;
+}
+.men-card-1 {
+  align-self: stretch;
+  background-color: var(--color-gainsboro-100);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-8xs) 5.900000000000091px 22.09999999999991px
+    5.899999999999636px;
+  box-sizing: border-box;
+  gap: 10.100000000000025px;
+}
+.rectangle-icon {
+  width: 417.7px;
+  height: 508.4px;
+  position: relative;
+  display: none;
+}
+.men-card-4-child1,
+.simpsons-hoodie1 {
+  align-self: stretch;
+  position: relative;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.men-card-4-child1 {
+  height: 387.8px;
+  border-radius: var(--br-xl);
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.simpsons-hoodie1 {
+  letter-spacing: 0.03em;
+  debug_commit: 1cbd860;
+}
+.dropdown-menu,
+.progress-bar-stack,
+.toggle-switch {
+  height: 14.1px;
+  width: 16.5px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-gray-200);
+  border: 0 solid var(--white);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.dropdown-menu,
+.toggle-switch {
+  background-color: var(--color-cadetblue);
+}
+.dropdown-menu {
+  background-color: var(--white);
+}
+.progress-bar-stack-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 7.099999999999909px;
+}
+.frame-child32 {
+  height: 35.2px;
+  width: 106.2px;
+  position: relative;
+  border-radius: var(--br-4xs);
+  background-color: var(--color-gray-300);
+  display: none;
+}
+.div18 {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-xl);
+  letter-spacing: 0.03em;
+  font-weight: 600;
+  font-family: var(--app-m10);
+  color: var(--white);
+  text-align: left;
+  white-space: nowrap;
+  z-index: 2;
+}
+.radio-button-set,
+.rectangle-parent6 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.rectangle-parent6 {
+  cursor: pointer;
+  border: 0;
+  padding: 6.100000000000136px var(--padding-2xs) var(--padding-8xs)
+    var(--padding-base-5);
+  background-color: var(--color-gray-300);
+  align-self: stretch;
+  border-radius: var(--br-4xs);
+  flex-direction: row;
+  z-index: 1;
+}
+.radio-button-set {
+  width: 106.2px;
+  flex-direction: column;
+  gap: var(--gap-5xs);
+}
+.date-range,
+.frame-child33,
+.radio-button-set {
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+}
+.date-range {
+  width: 184.1px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-10xs);
+}
+.frame-child33 {
+  width: 38.2px;
+  flex: 1;
+  position: relative;
+  max-height: 100%;
+  z-index: 1;
+}
+.decimal-range-inner {
+  height: 78.1px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-8xs) 0 0;
+  box-sizing: border-box;
+}
+.decimal-range,
+.list-item-bank {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.decimal-range {
+  flex: 1;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.list-item-bank {
+  align-self: stretch;
+  justify-content: flex-end;
+  padding: 0 var(--padding-3xl);
+  box-sizing: border-box;
+}
+.men-card-41,
+.men-card-7-child {
+  border-radius: var(--br-xl);
+  max-width: 100%;
+}
+.men-card-41 {
+  align-self: stretch;
+  background-color: var(--color-gainsboro-100);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 5.100000000000023px 5.900000000000091px 22.100000000000136px
+    5.899999999999636px;
+  box-sizing: border-box;
+  gap: var(--gap-3xs);
+}
+.men-card-7-child {
+  width: 417.7px;
+  height: 508.4px;
+  position: relative;
+  display: none;
+}
+.men-card-7-item,
+.printed-sweatshirt {
+  align-self: stretch;
+  position: relative;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.men-card-7-item {
+  height: 387.8px;
+  border-radius: var(--br-xl);
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.printed-sweatshirt {
+  letter-spacing: 0.03em;
+  debug_commit: 1cbd860;
+}
+.frame-child34,
+.frame-child35,
+.star-shape {
+  height: 14.1px;
+  width: 16.5px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-gray-200);
+  border: 0 solid var(--white);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.frame-child35,
+.star-shape {
+  background-color: var(--color-cadetblue);
+}
+.star-shape {
+  background-color: var(--white);
+}
+.ellipse-parent6 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 7.100000000000136px;
+}
+.frame-child36 {
+  height: 35.2px;
+  width: 106.2px;
+  position: relative;
+  border-radius: var(--br-4xs);
+  background-color: var(--color-gray-300);
+  display: none;
+}
+.div19 {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-xl);
+  letter-spacing: 0.03em;
+  font-weight: 600;
+  font-family: var(--app-m10);
+  color: var(--white);
+  text-align: left;
+  white-space: nowrap;
+  z-index: 2;
+}
+.circle-shape,
+.printed-sweatshirt-parent,
+.rectangle-parent7 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.rectangle-parent7 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-7xs) var(--padding-2xs) 5.100000000000136px
+    var(--padding-base-5);
+  background-color: var(--color-gray-300);
+  align-self: stretch;
+  border-radius: var(--br-4xs);
+  flex-direction: row;
+  z-index: 1;
+}
+.circle-shape,
+.printed-sweatshirt-parent {
+  flex-direction: column;
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+}
+.circle-shape {
+  width: 106.2px;
+  gap: 8.000000000000227px;
+}
+.printed-sweatshirt-parent {
+  width: 199.4px;
+  gap: var(--gap-10xs);
+}
+.frame-child37 {
+  width: 38.2px;
+  flex: 1;
+  position: relative;
+  max-height: 100%;
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+  z-index: 1;
+}
+.flex-box,
+.flex-box-inner {
+  display: flex;
+  align-items: flex-start;
+}
+.flex-box-inner {
+  height: 78.1px;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-8xs) 0 0;
+  box-sizing: border-box;
+}
+.flex-box {
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 100%;
+  gap: var(--gap-xl);
+}
+.men-card-7,
+.men-card-7-wrapper,
+.stack-layout {
+  display: flex;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.stack-layout {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 22.000000000000455px 0 var(--padding-3xl);
+}
+.men-card-7,
+.men-card-7-wrapper {
+  justify-content: flex-start;
+}
+.men-card-7 {
+  flex: 1;
+  border-radius: var(--br-xl);
+  background-color: var(--color-gainsboro-100);
+  flex-direction: column;
+  align-items: flex-end;
+  padding: var(--padding-8xs) 5.8999999999991815px 22.09999999999991px;
+  gap: 10.100000000000136px;
+}
+.men-card-7-wrapper {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0 0 0 5.899999999999636px;
+}
+.men-card-10-child {
+  width: 417.7px;
+  height: 508.4px;
+  position: relative;
+  border-radius: var(--br-xl);
+  display: none;
+  max-width: 100%;
+}
+.men-card-10-item,
+.rick-morty {
+  align-self: stretch;
+  position: relative;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.men-card-10-item {
+  height: 387.8px;
+  border-radius: var(--br-xl);
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.rick-morty {
+  letter-spacing: 0.03em;
+  debug_commit: 1cbd860;
+}
+.gauge,
+.meter,
+.timer {
+  height: 14.1px;
+  width: 16.5px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-gray-200);
+  border: 0 solid var(--white);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.meter,
+.timer {
+  background-color: var(--color-cadetblue);
+}
+.timer {
+  background-color: var(--white);
+}
+.gauge-parent,
+.video {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.gauge-parent {
+  flex-direction: row;
+  gap: 7.100000000000136px;
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+}
+.video {
+  align-self: stretch;
+  flex-direction: column;
+  gap: var(--gap-10xs);
+}
+.calendar-child {
+  height: 35.2px;
+  width: 106.2px;
+  position: relative;
+  border-radius: var(--br-4xs);
+  background-color: var(--color-gray-300);
+  display: none;
+}
+.div20 {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-xl);
+  letter-spacing: 0.03em;
+  font-weight: 600;
+  font-family: var(--app-m10);
+  color: var(--white);
+  text-align: left;
+  white-space: nowrap;
+  flex-shrink: 0;
+  z-index: 2;
+}
+.calendar {
+  cursor: pointer;
+  border: 0;
+  padding: 6.100000000000364px var(--padding-2xs) 4.999999999999545px
+    var(--padding-base-5);
+  background-color: var(--color-gray-300);
+  width: 106.2px;
+  border-radius: var(--br-4xs);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.frame-child38,
+.image {
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+}
+.image {
+  width: 256.1px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.frame-child38 {
+  width: 38.2px;
+  flex: 1;
+  position: relative;
+  max-height: 100%;
+  z-index: 1;
+}
+.icon,
+.icon-inner,
+.symbol {
+  display: flex;
+  align-items: flex-start;
+}
+.icon-inner {
+  height: 78.1px;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-8xs) 0 0;
+  box-sizing: border-box;
+}
+.icon,
+.symbol {
+  flex-direction: row;
+  max-width: 100%;
+}
+.icon {
+  flex: 1;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.symbol {
+  align-self: stretch;
+  justify-content: flex-end;
+  padding: 0 22.000000000000455px 0 var(--padding-3xl);
+  box-sizing: border-box;
+}
+.heading,
+.men-card-1-parent,
+.men-card-10 {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.men-card-10 {
+  flex: 1;
+  border-radius: var(--br-xl);
+  background-color: var(--color-gainsboro-100);
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 5.099999999999909px 5.8999999999991815px 22.100000000000364px;
+  box-sizing: border-box;
+  gap: var(--gap-3xs);
+}
+.heading,
+.men-card-1-parent {
+  align-items: flex-start;
+}
+.heading {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 0 0 5.899999999999636px;
+  box-sizing: border-box;
+}
+.men-card-1-parent {
+  flex: 1;
+  flex-direction: column;
+  gap: 36.13333333333325px;
+  min-width: 318px;
+}
+.men-card-2-child {
+  width: 417.7px;
+  height: 508.4px;
+  position: relative;
+  border-radius: var(--br-xl);
+  display: none;
+  max-width: 100%;
+}
+.men-card-2-item,
+.relaxed-fit-hoodie1 {
+  align-self: stretch;
+  position: relative;
+  z-index: 1;
+}
+.men-card-2-item {
+  height: 387.8px;
+  border-radius: var(--br-xl);
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.relaxed-fit-hoodie1 {
+  letter-spacing: 0.03em;
+}
+.frame-child39,
+.frame-child40,
+.frame-child41 {
+  height: 14.1px;
+  width: 16.5px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-gray-200);
+  border: 0 solid var(--white);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.frame-child40,
+.frame-child41 {
+  background-color: var(--color-cadetblue);
+}
+.frame-child41 {
+  background-color: var(--white);
+}
+.ellipse-parent7 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 7.099999999999909px;
+}
+.error-collector-child {
+  height: 35.2px;
+  width: 106.2px;
+  position: relative;
+  border-radius: var(--br-4xs);
+  background-color: var(--color-gray-300);
+  display: none;
+}
+.div21 {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-xl);
+  letter-spacing: 0.03em;
+  font-weight: 600;
+  font-family: var(--app-m10);
+  color: var(--white);
+  text-align: left;
+  white-space: nowrap;
+  z-index: 2;
+}
+.data-writer,
+.error-collector {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.error-collector {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-7xs) var(--padding-base) 5.100000000000023px
+    15.400000000000093px;
+  background-color: var(--color-gray-300);
+  align-self: stretch;
+  border-radius: var(--br-4xs);
+  flex-direction: row;
+  z-index: 1;
+}
+.data-writer {
+  width: 106.2px;
+  flex-direction: column;
+  gap: var(--gap-3xs);
+}
+.data-joiner,
+.frame-child42 {
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+}
+.data-joiner {
+  width: 198.2px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-10xs);
+}
+.frame-child42 {
+  width: 38.2px;
+  flex: 1;
+  position: relative;
+  max-height: 100%;
+  z-index: 1;
+}
+.input-splitter-inner {
+  height: 78.1px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-8xs) 0 0;
+  box-sizing: border-box;
+}
+.expression-evaluator,
+.input-splitter {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.input-splitter {
+  flex: 1;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.expression-evaluator {
+  align-self: stretch;
+  justify-content: flex-end;
+  padding: 0 21.90000000000009px 0 var(--padding-3xl);
+  box-sizing: border-box;
+}
+.men-card-2,
+.men-card-5-child {
+  border-radius: var(--br-xl);
+  max-width: 100%;
+}
+.men-card-2 {
+  align-self: stretch;
+  background-color: var(--color-gainsboro-100);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-8xs) 5.899999999999636px 20.09999999999991px;
+  box-sizing: border-box;
+  gap: 10.100000000000025px;
+}
+.men-card-5-child {
+  width: 417.7px;
+  height: 508.4px;
+  position: relative;
+  display: none;
+}
+.men-card-5-item,
+.sage-sweatshirt {
+  align-self: stretch;
+  position: relative;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.men-card-5-item {
+  height: 387.8px;
+  border-radius: var(--br-xl);
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.sage-sweatshirt {
+  letter-spacing: 0.03em;
+  debug_commit: 1cbd860;
+}
+.frame-child43,
+.frame-child44,
+.frame-child45 {
+  height: 14.1px;
+  width: 16.5px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-gray-200);
+  border: 0 solid var(--white);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.frame-child44,
+.frame-child45 {
+  background-color: var(--color-cadetblue);
+}
+.frame-child45 {
+  background-color: var(--white);
+}
+.ellipse-parent8,
+.sage-sweatshirt-parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.ellipse-parent8 {
+  flex-direction: row;
+  gap: 7.099999999999909px;
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+}
+.sage-sweatshirt-parent {
+  align-self: stretch;
+  flex-direction: column;
+  gap: var(--gap-10xs);
+}
+.error-collector-item {
+  height: 35.2px;
+  width: 106.2px;
+  position: relative;
+  border-radius: var(--br-4xs);
+  background-color: var(--color-gray-300);
+  display: none;
+}
+.div22 {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-xl);
+  letter-spacing: 0.03em;
+  font-weight: 600;
+  font-family: var(--app-m10);
+  color: var(--white);
+  text-align: left;
+  white-space: nowrap;
+  z-index: 2;
+}
+.error-collector1 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-7xs) var(--padding-base) 5.100000000000136px
+    15.400000000000093px;
+  background-color: var(--color-gray-300);
+  width: 106.2px;
+  border-radius: var(--br-4xs);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.frame-child46,
+.frame-parent18 {
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+}
+.frame-parent18 {
+  width: 171.1px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10.100000000000136px;
+}
+.frame-child46 {
+  width: 38.2px;
+  flex: 1;
+  position: relative;
+  max-height: 100%;
+  z-index: 1;
+}
+.frame-wrapper12 {
+  height: 78.1px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-8xs) 0 0;
+  box-sizing: border-box;
+}
+.frame-parent17,
+.men-card-5-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.frame-parent17 {
+  flex: 1;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.men-card-5-inner {
+  align-self: stretch;
+  justify-content: flex-end;
+  padding: 0 21.90000000000009px 0 var(--padding-3xl);
+  box-sizing: border-box;
+}
+.men-card-5,
+.men-card-8-child1 {
+  border-radius: var(--br-xl);
+  max-width: 100%;
+}
+.men-card-5 {
+  align-self: stretch;
+  background-color: var(--color-gainsboro-100);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 5.100000000000023px 5.899999999999636px var(--padding-xl);
+  box-sizing: border-box;
+  gap: var(--gap-3xs);
+}
+.men-card-8-child1 {
+  width: 417.7px;
+  height: 508.4px;
+  position: relative;
+  display: none;
+}
+.men-card-8-child2,
+.squidward-printed-hoodie1 {
+  align-self: stretch;
+  position: relative;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.men-card-8-child2 {
+  height: 387.8px;
+  border-radius: var(--br-xl);
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.squidward-printed-hoodie1 {
+  letter-spacing: 0.03em;
+  debug_commit: 1cbd860;
+}
+.flow-controller,
+.parallel-splitter,
+.sequence-connector {
+  height: 14.1px;
+  width: 16.5px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-gray-200);
+  border: 0 solid var(--white);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.flow-controller,
+.parallel-splitter {
+  background-color: var(--color-cadetblue);
+}
+.flow-controller {
+  background-color: var(--white);
+}
+.constant-provider,
+.sequence-connector-parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sequence-connector-parent {
+  flex-direction: row;
+  gap: 7.099999999999909px;
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+}
+.constant-provider {
+  align-self: stretch;
+  flex-direction: column;
+  gap: var(--gap-10xs);
+}
+.error-collector-inner {
+  height: 35.2px;
+  width: 106.2px;
+  position: relative;
+  border-radius: var(--br-4xs);
+  background-color: var(--color-gray-300);
+  display: none;
+}
+.div23 {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-xl);
+  letter-spacing: 0.03em;
+  font-weight: 600;
+  font-family: var(--app-m10);
+  color: var(--white);
+  text-align: left;
+  white-space: nowrap;
+  z-index: 2;
+}
+.error-collector2 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-7xs) var(--padding-base) 5.100000000000136px
+    15.399999999999636px;
+  background-color: var(--color-gray-300);
+  width: 106.2px;
+  border-radius: var(--br-4xs);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.frame-child47,
+.input-merger {
+  flex: 1;
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+}
+.input-merger {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10.000000000000227px;
+  min-width: 180px;
+}
+.frame-child47 {
+  width: 38.2px;
+  position: relative;
+  max-height: 100%;
+  z-index: 1;
+}
+.data-sorter,
+.data-sorter-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.data-sorter-inner {
+  height: 78.1px;
+  flex-direction: column;
+  padding: var(--padding-8xs) 0 0;
+  box-sizing: border-box;
+}
+.data-sorter {
+  flex: 1;
+  flex-direction: row;
+  gap: 46.099999999999454px;
+  max-width: 100%;
+}
+.error-handler,
+.function-applier,
+.men-card-81 {
+  display: flex;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.function-applier {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 21.900000000000546px 0 var(--padding-3xl);
+}
+.error-handler,
+.men-card-81 {
+  justify-content: flex-start;
+}
+.men-card-81 {
+  flex: 1;
+  border-radius: var(--br-xl);
+  background-color: var(--color-gainsboro-100);
+  flex-direction: column;
+  align-items: flex-end;
+  padding: var(--padding-8xs) 5.899999999999636px 20.09999999999991px;
+  gap: 10.100000000000136px;
+}
+.error-handler {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0 0 0 5.900000000000091px;
+}
+.men-card-11-child {
+  width: 417.7px;
+  height: 508.4px;
+  position: relative;
+  border-radius: var(--br-xl);
+  display: none;
+  max-width: 100%;
+}
+.men-card-11-item,
+.regular-fit-hoodie {
+  align-self: stretch;
+  position: relative;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.men-card-11-item {
+  height: 387.8px;
+  border-radius: var(--br-xl);
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.regular-fit-hoodie {
+  letter-spacing: 0.03em;
+  debug_commit: 1cbd860;
+}
+.frame-child48,
+.frame-child49,
+.frame-child50 {
+  height: 14.1px;
+  width: 16.5px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-gray-200);
+  border: 0 solid var(--white);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.frame-child49,
+.frame-child50 {
+  background-color: var(--color-cadetblue);
+}
+.frame-child50 {
+  background-color: var(--white);
+}
+.ellipse-parent9,
+.regular-fit-hoodie-parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.ellipse-parent9 {
+  flex-direction: row;
+  gap: 7.099999999999909px;
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+}
+.regular-fit-hoodie-parent {
+  align-self: stretch;
+  flex-direction: column;
+  gap: var(--gap-10xs);
+}
+.data-aggregator-child {
+  height: 35.2px;
+  width: 106.2px;
+  position: relative;
+  border-radius: var(--br-4xs);
+  background-color: var(--color-gray-300);
+  display: none;
+}
+.div24 {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-xl);
+  letter-spacing: 0.03em;
+  font-weight: 600;
+  font-family: var(--app-m10);
+  color: var(--white);
+  text-align: left;
+  white-space: nowrap;
+  flex-shrink: 0;
+  z-index: 2;
+}
+.data-aggregator1 {
+  cursor: pointer;
+  border: 0;
+  padding: 6.100000000000364px var(--padding-lg) 4.999999999999545px
+    15.399999999999636px;
+  background-color: var(--color-gray-300);
+  width: 106.2px;
+  border-radius: var(--br-4xs);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.frame-child51,
+.frame-parent20 {
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+}
+.frame-parent20 {
+  width: 195.9px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.frame-child51 {
+  width: 38.2px;
+  flex: 1;
+  position: relative;
+  max-height: 100%;
+  z-index: 1;
+}
+.frame-wrapper13 {
+  height: 78.1px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-8xs) 0 0;
+  box-sizing: border-box;
+}
+.frame-parent19,
+.men-card-11-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.frame-parent19 {
+  flex: 1;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.men-card-11-inner {
+  align-self: stretch;
+  justify-content: flex-end;
+  padding: 0 21.900000000000546px 0 var(--padding-3xl);
+  box-sizing: border-box;
+}
+.error-handler1,
+.loop-control,
+.men-card-11 {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.men-card-11 {
+  flex: 1;
+  border-radius: var(--br-xl);
+  background-color: var(--color-gainsboro-100);
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 5.099999999999909px 5.899999999999636px 20.100000000000364px;
+  box-sizing: border-box;
+  gap: var(--gap-3xs);
+}
+.error-handler1,
+.loop-control {
+  align-items: flex-start;
+}
+.error-handler1 {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 0 0 5.900000000000091px;
+  box-sizing: border-box;
+}
+.loop-control {
+  flex: 1;
+  flex-direction: column;
+  gap: 36.13333333333325px;
+  min-width: 318px;
+}
+.men-card-3-child1 {
+  width: 417.7px;
+  height: 508.4px;
+  position: relative;
+  border-radius: var(--br-xl);
+  display: none;
+  max-width: 100%;
+}
+.men-card-3-child2,
+.relaxed-fit-sweatshirt1 {
+  align-self: stretch;
+  position: relative;
+  z-index: 1;
+}
+.men-card-3-child2 {
+  height: 387.8px;
+  border-radius: var(--br-xl);
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.relaxed-fit-sweatshirt1 {
+  letter-spacing: 0.03em;
+}
+.frame-child52,
+.frame-child53,
+.frame-child54 {
+  height: 14.1px;
+  width: 16.5px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-gray-200);
+  border: 0 solid var(--white);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.frame-child53,
+.frame-child54 {
+  background-color: var(--color-cadetblue);
+}
+.frame-child54 {
+  background-color: var(--white);
+}
+.ellipse-parent10 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 7.100000000000136px;
+}
+.frame-child55 {
+  height: 35.2px;
+  width: 106.2px;
+  position: relative;
+  border-radius: var(--br-4xs);
+  background-color: var(--color-gray-300);
+  display: none;
+}
+.div25 {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-xl);
+  letter-spacing: 0.03em;
+  font-weight: 600;
+  font-family: var(--app-m10);
+  color: var(--white);
+  text-align: left;
+  white-space: nowrap;
+  z-index: 2;
+}
+.rectangle-parent8 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-7xs) var(--padding-mid) 5.100000000000023px
+    var(--padding-base-5);
+  background-color: var(--color-gray-300);
+  align-self: stretch;
+  border-radius: var(--br-4xs);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 1;
+}
+.frame-parent22,
+.relaxed-fit-sweatshirt-group {
+  width: 106.2px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.relaxed-fit-sweatshirt-group {
+  width: 237.2px;
+  gap: var(--gap-10xs);
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+}
+.frame-child56 {
+  width: 38.2px;
+  flex: 1;
+  position: relative;
+  max-height: 100%;
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+  z-index: 1;
+}
+.frame-wrapper14 {
+  height: 78.1px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-8xs) 0 0;
+  box-sizing: border-box;
+}
+.frame-parent21,
+.men-card-3-inner1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.frame-parent21 {
+  flex: 1;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.men-card-3-inner1 {
+  align-self: stretch;
+  justify-content: flex-end;
+  padding: 0 var(--padding-3xl);
+  box-sizing: border-box;
+}
+.men-card-31,
+.men-card-6-child {
+  border-radius: var(--br-xl);
+  max-width: 100%;
+}
+.men-card-31 {
+  align-self: stretch;
+  background-color: var(--color-gainsboro-100);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-8xs) 5.900000000000091px 20.09999999999991px
+    5.899999999999636px;
+  box-sizing: border-box;
+  gap: 10.100000000000025px;
+}
+.men-card-6-child {
+  width: 417.7px;
+  height: 508.4px;
+  position: relative;
+  display: none;
+}
+.men-card-6-item,
+.relaxed-fit-sweatshirt2 {
+  align-self: stretch;
+  position: relative;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.men-card-6-item {
+  height: 387.8px;
+  border-radius: var(--br-xl);
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.relaxed-fit-sweatshirt2 {
+  letter-spacing: 0.03em;
+  debug_commit: 1cbd860;
+}
+.frame-child57,
+.frame-child58,
+.frame-child59 {
+  height: 14.1px;
+  width: 16.5px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-gray-200);
+  border: 0 solid var(--white);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.frame-child58,
+.frame-child59 {
+  background-color: var(--color-cadetblue);
+}
+.frame-child59 {
+  background-color: var(--white);
+}
+.ellipse-parent11 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 7.100000000000136px;
+}
+.frame-child60 {
+  height: 35.2px;
+  width: 106.2px;
+  position: relative;
+  border-radius: var(--br-4xs);
+  background-color: var(--color-gray-300);
+  display: none;
+}
+.div26 {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-xl);
+  letter-spacing: 0.03em;
+  font-weight: 600;
+  font-family: var(--app-m10);
+  color: var(--white);
+  text-align: left;
+  white-space: nowrap;
+  z-index: 2;
+}
+.rectangle-parent9 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-7xs) var(--padding-mid) 5.100000000000136px
+    var(--padding-base-5);
+  background-color: var(--color-gray-300);
+  align-self: stretch;
+  border-radius: var(--br-4xs);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 1;
+}
+.frame-parent24,
+.relaxed-fit-sweatshirt-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+}
+.frame-parent24 {
+  width: 106.2px;
+  gap: 10.100000000000136px;
+}
+.relaxed-fit-sweatshirt-container {
+  width: 237.2px;
+  gap: var(--gap-10xs);
+}
+.frame-child61 {
+  width: 38.2px;
+  flex: 1;
+  position: relative;
+  max-height: 100%;
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+  z-index: 1;
+}
+.frame-wrapper15 {
+  height: 78.1px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-8xs) 0 0;
+  box-sizing: border-box;
+}
+.frame-parent23,
+.men-card-6-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.frame-parent23 {
+  flex: 1;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.men-card-6-inner {
+  align-self: stretch;
+  justify-content: flex-end;
+  padding: 0 var(--padding-3xl);
+  box-sizing: border-box;
+}
+.men-card-6,
+.men-card-9-child1 {
+  border-radius: var(--br-xl);
+  max-width: 100%;
+}
+.men-card-6 {
+  align-self: stretch;
+  background-color: var(--color-gainsboro-100);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 5.100000000000023px 5.900000000000091px var(--padding-xl)
+    5.899999999999636px;
+  box-sizing: border-box;
+  gap: var(--gap-3xs);
+}
+.men-card-9-child1 {
+  width: 417.7px;
+  height: 508.4px;
+  position: relative;
+  display: none;
+}
+.men-card-9-child2,
+.relaxed-fit-hoodie2 {
+  align-self: stretch;
+  position: relative;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.men-card-9-child2 {
+  height: 387.8px;
+  border-radius: var(--br-xl);
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.relaxed-fit-hoodie2 {
+  letter-spacing: 0.03em;
+  debug_commit: 1cbd860;
+}
+.frame-child62,
+.frame-child63,
+.frame-child64 {
+  height: 14.1px;
+  width: 16.5px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-gray-200);
+  border: 0 solid var(--white);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.frame-child63,
+.frame-child64 {
+  background-color: var(--color-cadetblue);
+}
+.frame-child64 {
+  background-color: var(--white);
+}
+.ellipse-parent12 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 7.099999999999909px;
+}
+.frame-child65 {
+  height: 35.2px;
+  width: 106.2px;
+  position: relative;
+  border-radius: var(--br-4xs);
+  background-color: var(--color-gray-300);
+  display: none;
+}
+.div27 {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-xl);
+  letter-spacing: 0.03em;
+  font-weight: 600;
+  font-family: var(--app-m10);
+  color: var(--white);
+  text-align: left;
+  white-space: nowrap;
+  z-index: 2;
+}
+.rectangle-parent10 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-7xs) var(--padding-mid) 5.100000000000136px
+    var(--padding-base-5);
+  background-color: var(--color-gray-300);
+  align-self: stretch;
+  border-radius: var(--br-4xs);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 1;
+}
+.frame-parent26,
+.relaxed-fit-hoodie-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+}
+.frame-parent26 {
+  width: 106.2px;
+  gap: 10.000000000000227px;
+}
+.relaxed-fit-hoodie-group {
+  width: 198.2px;
+  gap: var(--gap-10xs);
+}
+.frame-child66 {
+  width: 38.2px;
+  flex: 1;
+  position: relative;
+  max-height: 100%;
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+  z-index: 1;
+}
+.frame-wrapper16 {
+  height: 78.1px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-8xs) 0 0;
+  box-sizing: border-box;
+}
+.frame-parent25,
+.men-card-9-inner1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.frame-parent25 {
+  flex: 1;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.men-card-9-inner1 {
+  align-self: stretch;
+  justify-content: flex-end;
+  padding: 0 var(--padding-3xl);
+  box-sizing: border-box;
+}
+.men-card-9-wrapper,
+.men-card-91 {
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.men-card-91 {
+  flex: 1;
+  border-radius: var(--br-xl);
+  background-color: var(--color-gainsboro-100);
+  flex-direction: column;
+  align-items: flex-end;
+  padding: var(--padding-8xs) 5.899999999999636px 20.09999999999991px;
+  gap: 10.100000000000136px;
+}
+.men-card-9-wrapper {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0 0 0 5.899999999999636px;
+}
+.men-card-12-child {
+  width: 417.7px;
+  height: 508.4px;
+  position: relative;
+  border-radius: var(--br-xl);
+  display: none;
+  max-width: 100%;
+}
+.men-card-12-item,
+.relaxed-fit-sweatshirt3 {
+  align-self: stretch;
+  position: relative;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.men-card-12-item {
+  height: 387.8px;
+  border-radius: var(--br-xl);
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.relaxed-fit-sweatshirt3 {
+  letter-spacing: 0.03em;
+  debug_commit: 1cbd860;
+}
+.frame-child67,
+.frame-child68,
+.frame-child69 {
+  height: 14.1px;
+  width: 16.5px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-gray-200);
+  border: 0 solid var(--white);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.frame-child68,
+.frame-child69 {
+  background-color: var(--color-cadetblue);
+}
+.frame-child69 {
+  background-color: var(--white);
+}
+.ellipse-parent13 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 7.099999999999909px;
+}
+.data-aggregator-item {
+  height: 35.2px;
+  width: 106.2px;
+  position: relative;
+  border-radius: var(--br-4xs);
+  background-color: var(--color-gray-300);
+  display: none;
+}
+.div28 {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-xl);
+  letter-spacing: 0.03em;
+  font-weight: 600;
+  font-family: var(--app-m10);
+  color: var(--white);
+  text-align: left;
+  white-space: nowrap;
+  z-index: 2;
+}
+.data-aggregator2 {
+  cursor: pointer;
+  border: 0;
+  padding: 6.100000000000364px var(--padding-mid) 4.999999999999545px
+    var(--padding-base-5);
+  background-color: var(--color-gray-300);
+  align-self: stretch;
+  border-radius: var(--br-4xs);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 1;
+}
+.frame-parent28,
+.relaxed-fit-sweatshirt-parent1 {
+  width: 106.2px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+}
+.relaxed-fit-sweatshirt-parent1 {
+  width: 237.2px;
+  gap: var(--gap-10xs);
+}
+.frame-child70 {
+  width: 38.2px;
+  flex: 1;
+  position: relative;
+  max-height: 100%;
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+  z-index: 1;
+}
+.frame-parent27,
+.frame-wrapper17 {
+  display: flex;
+  align-items: flex-start;
+}
+.frame-wrapper17 {
+  height: 78.1px;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-8xs) 0 0;
+  box-sizing: border-box;
+}
+.frame-parent27 {
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 100%;
+  gap: var(--gap-xl);
+}
+.men-card-12,
+.men-card-12-inner {
+  display: flex;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.men-card-12-inner {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-3xl);
+}
+.men-card-12 {
+  flex: 1;
+  border-radius: var(--br-xl);
+  background-color: var(--color-gainsboro-100);
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 5.099999999999909px 5.899999999999636px 20.100000000000364px;
+  gap: var(--gap-3xs);
+}
+.men-card-12-wrapper {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 0 0 5.899999999999636px;
+  box-sizing: border-box;
+}
+.men-card-12-wrapper,
+.men-card-3-parent,
+.winter-collection-pics {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.men-card-3-parent {
+  flex: 1;
+  flex-direction: column;
+  gap: 36.13333333333325px;
+  min-width: 318px;
+}
+.winter-collection-pics {
+  align-self: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 59.05000000000041px;
+}
+.frame-child71 {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 17px;
+  background-color: #0ca0dd;
+  width: 342.8px;
+}
+.load-more-products1 {
+  position: absolute;
+  top: 14px;
+  left: 34px;
+  letter-spacing: 0.03em;
+  font-weight: 800;
+  display: inline-block;
+  width: 324px;
+  z-index: 1;
+}
+.rectangle-parent11 {
+  height: 52px;
+  width: 358px;
+  position: relative;
+  max-width: 100%;
+}
+.frame-wrapper18,
+.winter-collection-pics-parent {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.frame-wrapper18 {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-8xl) 0 var(--padding-xl);
+  box-sizing: border-box;
+  font-size: var(--font-size-xl);
+  font-family: var(--app-m10);
+}
+.winter-collection-pics-parent {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 36px;
+}
+.frame-main,
+.frame-wrapper10 {
+  align-self: stretch;
+  display: flex;
+  max-width: 100%;
+}
+.frame-wrapper10 {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 25.09999999999991px 0 var(--padding-7xl);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--color-black);
+  font-family: var(--font-merriweather-sans);
+}
+.frame-main {
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 39px;
+}
+.info-item {
+  height: 314px;
+  width: 1435px;
+  position: relative;
+  background-color: var(--color-black);
+  display: none;
+  max-width: 100%;
+}
+.navigation1 {
+  height: 19.5px;
+  position: relative;
+  text-transform: uppercase;
+  display: inline-block;
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+  z-index: 1;
+}
+.home1 {
+  white-space: pre-wrap;
+}
+.about-us1,
+.faq1,
+.help-centre1,
+.home1,
+.investor-relations1,
+.jobs1 {
+  margin: 0;
+}
+.home-about-us-container1 {
+  height: 184.6px;
+  flex: 1;
+  position: relative;
+  line-height: 30px;
+  display: inline-block;
+  mix-blend-mode: normal;
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+  z-index: 1;
+}
+.filter-chain,
+.image-analyzer1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.image-analyzer1 {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-9xs);
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-500);
+}
+.filter-chain {
+  width: 198px;
+  flex-direction: column;
+  padding: 0 24.800000000000185px 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-xs-5);
+}
+.talk-to-us2 {
+  height: 30px;
+  flex: 1;
+  position: relative;
+  text-transform: uppercase;
+  display: inline-block;
+  z-index: 1;
+}
+.sorting-tree {
+  width: 261px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-40xl);
+  box-sizing: border-box;
+}
+.p1,
+.rakesh22bce7907vitaspstudent1 {
+  margin: 0;
+}
+.supportapcomcom-61 {
+  align-self: stretch;
+  height: 71px;
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 30px;
+  color: var(--color-gray-500);
+  display: inline-block;
+  flex-shrink: 0;
+  mix-blend-mode: normal;
+  z-index: 1;
+}
+.error-handler2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.apcom-all-ri1 {
+  flex: 1;
+  position: relative;
+  line-height: 14px;
+  z-index: 1;
+}
+.apcom-all-ri-container,
+.response-builder,
+.user-input {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.apcom-all-ri-container {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 var(--padding-sm) 0 var(--padding-4xs);
+  text-align: center;
+  font-size: var(--font-size-sm);
+  font-family: var(--font-roboto);
+}
+.response-builder,
+.user-input {
+  flex-direction: column;
+}
+.response-builder {
+  align-self: stretch;
+  gap: var(--gap-83xl);
+}
+.user-input {
+  width: 307px;
+  padding: var(--padding-12xs) 0 0;
+  box-sizing: border-box;
+}
+.talk-to-us3 {
+  height: 19.5px;
+  position: relative;
+  text-transform: uppercase;
+  display: inline-block;
+  z-index: 1;
+}
+.network-interface {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-26xl);
+}
+.queue-manager {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-lgi-5);
+  border: 1px solid var(--white);
+  box-sizing: border-box;
+  opacity: 0.25;
+}
+.shape-icon1 {
+  position: absolute;
+  height: 38.52%;
+  width: 18.01%;
+  top: 30.74%;
+  right: 41.09%;
+  bottom: 30.74%;
+  left: 40.9%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  z-index: 1;
+}
+.facebook-icon1,
+.linkedin-icon1 {
+  height: 54px;
+  position: relative;
+  z-index: 1;
+}
+.facebook-icon1 {
+  flex: 1;
+}
+.linkedin-icon1 {
+  width: 53.3px;
+  min-height: 54px;
+}
+.rectangle1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-lgi-5);
+  border: 1px solid var(--white);
+  box-sizing: border-box;
+  opacity: 0.25;
+}
+.twitter-icon3 {
+  position: absolute;
+  height: 28.15%;
+  width: 33.4%;
+  top: 35.93%;
+  right: 33.21%;
+  bottom: 35.93%;
+  left: 33.4%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  z-index: 1;
+}
+.twitter-icon2 {
+  height: 54px;
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+.database-connection,
+.form-validator,
+.user-interface {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.user-interface {
+  align-self: stretch;
+  flex: 1;
+  flex-direction: row;
+  gap: 19.049999999999727px;
+}
+.database-connection,
+.form-validator {
+  flex-direction: column;
+}
+.database-connection {
+  align-self: stretch;
+  flex: 1;
+  gap: var(--gap-lg-5);
+}
+.form-validator {
+  height: 93px;
+  width: 198px;
+  padding: var(--padding-12xs) 0 0;
+  box-sizing: border-box;
+}
+.info1,
+.products-page {
+  background-color: var(--color-black);
+  display: flex;
+  box-sizing: border-box;
+}
+.info1 {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--padding-34xl) var(--padding-255xl) 30.59999999999991px
+    var(--padding-259xl);
+  max-width: 100%;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--white);
+  font-family: var(--font-viga);
+}
+.products-page {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-7xs) 0 0;
+  gap: var(--gap-5xs);
+  letter-spacing: normal;
+  text-align: center;
+  font-size: var(--app-m10-size);
+  color: var(--dark-bag);
+  font-family: var(--app-m10);
+}
+@media screen and (max-width: 1300px) {
+  .info1 {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 800px) {
+  .logic-operator {
+    gap: 68.79999999999973px 34px;
+  }
+  .component-52-group {
+    padding-left: var(--padding-100xl);
+    padding-right: var(--padding-100xl);
+    box-sizing: border-box;
+  }
+  .mens-wear {
+    font-size: var(--font-size-21xl);
+  }
+  .winter-collection {
+    font-size: 44px;
+  }
+  .winter-collection-pics {
+    gap: 30px;
+  }
+  .winter-collection-pics-parent {
+    gap: 18px 36px;
+  }
+  .frame-main {
+    gap: 19px 39px;
+  }
+  .info1 {
+    padding-left: var(--padding-120xl);
+    padding-right: var(--padding-118xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .logic-operator {
+    gap: 68.79999999999973px 17px;
+  }
+  .component-52-group {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .mens-wear {
+    font-size: 24px;
+  }
+  .winter-collection {
+    font-size: 33px;
+  }
+  .div17 {
+    font-size: var(--font-size-base);
+  }
+  .frame-parent15 {
+    flex-wrap: wrap;
+  }
+  .div18 {
+    font-size: var(--font-size-base);
+  }
+  .decimal-range {
+    flex-wrap: wrap;
+  }
+  .div19 {
+    font-size: var(--font-size-base);
+  }
+  .flex-box {
+    flex-wrap: wrap;
+  }
+  .div20 {
+    font-size: var(--font-size-base);
+  }
+  .icon {
+    flex-wrap: wrap;
+  }
+  .men-card-1-parent {
+    gap: 18px 36.13333333333325px;
+  }
+  .div21 {
+    font-size: var(--font-size-base);
+  }
+  .input-splitter {
+    flex-wrap: wrap;
+  }
+  .div22 {
+    font-size: var(--font-size-base);
+  }
+  .frame-parent17 {
+    flex-wrap: wrap;
+  }
+  .div23 {
+    font-size: var(--font-size-base);
+  }
+  .data-sorter {
+    flex-wrap: wrap;
+    gap: 46.099999999999454px 23px;
+  }
+  .div24 {
+    font-size: var(--font-size-base);
+  }
+  .frame-parent19 {
+    flex-wrap: wrap;
+  }
+  .loop-control {
+    gap: 18px 36.13333333333325px;
+  }
+  .div25 {
+    font-size: var(--font-size-base);
+  }
+  .frame-parent21 {
+    flex-wrap: wrap;
+  }
+  .div26 {
+    font-size: var(--font-size-base);
+  }
+  .frame-parent23 {
+    flex-wrap: wrap;
+  }
+  .div27 {
+    font-size: var(--font-size-base);
+  }
+  .frame-parent25 {
+    flex-wrap: wrap;
+  }
+  .div28 {
+    font-size: var(--font-size-base);
+  }
+  .frame-parent27 {
+    flex-wrap: wrap;
+  }
+  .men-card-3-parent {
+    gap: 18px 36.13333333333325px;
+  }
+  .load-more-products1,
+  .navigation1,
+  .talk-to-us2 {
+    font-size: var(--font-size-base);
+  }
+  .sorting-tree {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .response-builder {
+    gap: 51px 102px;
+  }
+  .talk-to-us3 {
+    font-size: var(--font-size-base);
+  }
+  .info1 {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div class="products-page">
+      <header class="logic-operator">
+        <div class="top-bar2"></div>
+        <div class="output-aggregator">
+          <div class="menu-01-parent">
+            <img
+              class="menu-01-icon1"
+              loading="lazy"
+              alt=""
+              src="./public/menu011.svg"
+            />
+
+            <div class="fi-br-search-container">
+              <img
+                class="fi-br-search-icon1"
+                alt=""
+                src="./public/fibrsearch.svg"
+              />
+            </div>
+            <div class="user-01-wrapper">
+              <img class="user-01-icon1" alt="" src="./public/user01.svg" />
+            </div>
+            <a href="cart-page.html">
+            <div class="fi-br-shopping-cart-container">
+              <img
+                class="fi-br-shopping-cart-icon1"
+                alt=""
+                src="./public/fibrshoppingcart.svg"
+              />
+            </div>
+            </a>
+            <a href="home.html">
+            <div class="home-05-wrapper">
+              <img class="home-05-icon" alt="" src="./public/home05.svg" />
+            </div>
+            </a>
+          </div>
+        </div>
+        <div class="seamless-shopping-logo-wrapper">
+          <h1 class="seamless-shopping-logo1">Seamless Shopping</h1>
+        </div>
+        <a href="login.html">
+        <div class="sign-in-container">
+          <div class="sign-in1">Sign in</div>
+        </div>
+        </a>
+        <a href="login.html">
+        <div class="button-wrapper">
+          <button class="button1">
+            <div class="bg1"></div>
+            <div class="sign-up1">Sign Up</div>
+          </button>
+        </div>
+        </a>
+      </header>
+      <div class="catagory-wrapper">
+        <div class="catagory1">
+          <div class="catagory-item"></div>
+          <div class="component-52-group">
+            <div class="component-521">
+              <img
+                class="component-52-item"
+                loading="lazy"
+                alt=""
+                src="./public/ellipse-4@2x.png"
+              />
+
+              <div class="electronics6">Electronics</div>
+            </div>
+            <div class="component-531">
+              <img
+                class="unsplash-3q3tsj01nc-icon1"
+                loading="lazy"
+                alt=""
+                src="./public/unsplash-3q3tsj01nc@2x.png"
+              />
+
+              <div class="electronics7">Fashion</div>
+            </div>
+            <div class="component-541">
+              <img
+                class="unsplashgcdjllzoklo-icon1"
+                loading="lazy"
+                alt=""
+                src="./public/unsplashgcdjllzoklo@2x.png"
+              />
+
+              <div class="electronics8">Kids</div>
+            </div>
+            <div class="component-552">
+              <img
+                class="unsplashxpjyl0l5ii8-icon1"
+                loading="lazy"
+                alt=""
+                src="./public/unsplashxpjyl0l5ii8@2x.png"
+              />
+
+              <div class="electronics9">Mens</div>
+            </div>
+            <div class="component-553">
+              <img
+                class="unsplashoyye4g-i5zq-icon1"
+                loading="lazy"
+                alt=""
+                src="./public/unsplashoyye4gi5zq@2x.png"
+              />
+
+              <div class="electronics10">Womens</div>
+            </div>
+            <div class="component-561">
+              <img
+                class="unsplashpxm8aejbzvk-icon1"
+                loading="lazy"
+                alt=""
+                src="./public/unsplashpxm8aejbzvk@2x.png"
+              />
+
+              <div class="electronics11">Gifts</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <main class="frame-main">
+        <section class="rectangle-parent3">
+          <div class="frame-child24"></div>
+          <div class="rectangle-parent4">
+            <div class="frame-child25"></div>
+            <h1 class="mens-wear">MEN’S WEAR</h1>
+          </div>
+          <div class="frame-wrapper9">
+            <button class="winter-collection-parent">
+              <div class="winter-collection">Winter Collection</div>
+              <div class="frame-child26"></div>
+            </button>
+          </div>
+        </section>
+        <section class="frame-wrapper10">
+          <div class="winter-collection-pics-parent">
+            <div class="winter-collection-pics">
+              <div class="men-card-1-parent">
+                <div class="men-card-1">
+                  <img
+                    class="men-card-1-child"
+                    alt=""
+                    src="./public/rectangle-9.svg"
+                  />
+
+                  <img
+                    class="men-card-1-item"
+                    loading="lazy"
+                    alt=""
+                    src="./public/rectangle-171@2x.png"
+                  />
+
+                  <div class="men-card-1-inner">
+                    <div class="frame-parent15">
+                      <div class="relaxed-sweatshirt-parent">
+                        <div class="relaxed-sweatshirt">Relaxed Sweatshirt</div>
+                        <div class="frame-parent16">
+                          <div class="ellipse-parent5">
+                            <div class="frame-child27"></div>
+                            <div class="frame-child28"></div>
+                            <div class="frame-child29"></div>
+                          </div>
+                          <button class="rectangle-parent5">
+                            <div class="frame-child30"></div>
+                            <div class="div17">₹1799</div>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="frame-wrapper11">
+                        <img
+                          class="frame-child31"
+                          loading="lazy"
+                          alt=""
+                          src="./public/group-31.svg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="men-card-41">
+                  <img
+                    class="rectangle-icon"
+                    alt=""
+                    src="./public/rectangle-9.svg"
+                  />
+
+                  <img
+                    class="men-card-4-child1"
+                    alt=""
+                    src="./public/rectangle-17-11@2x.png"
+                  />
+
+                  <div class="list-item-bank">
+                    <div class="decimal-range">
+                      <div class="date-range">
+                        <div class="simpsons-hoodie1">Simpsons Hoodie</div>
+                        <div class="radio-button-set">
+                          <div class="progress-bar-stack-parent">
+                            <div class="progress-bar-stack"></div>
+                            <div class="toggle-switch"></div>
+                            <div class="dropdown-menu"></div>
+                          </div>
+                          <button class="rectangle-parent6">
+                            <div class="frame-child32"></div>
+                            <div class="div18">₹2499</div>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="decimal-range-inner">
+                        <img
+                          class="frame-child33"
+                          alt=""
+                          src="./public/group-31.svg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="men-card-7-wrapper">
+                  <div class="men-card-7">
+                    <img
+                      class="men-card-7-child"
+                      alt=""
+                      src="./public/rectangle-9.svg"
+                    />
+
+                    <img
+                      class="men-card-7-item"
+                      alt=""
+                      src="./public/rectangle-17-21@2x.png"
+                    />
+
+                    <div class="stack-layout">
+                      <div class="flex-box">
+                        <div class="printed-sweatshirt-parent">
+                          <div class="printed-sweatshirt">
+                            Printed Sweatshirt
+                          </div>
+                          <div class="circle-shape">
+                            <div class="ellipse-parent6">
+                              <div class="frame-child34"></div>
+                              <div class="frame-child35"></div>
+                              <div class="star-shape"></div>
+                            </div>
+                            <button class="rectangle-parent7">
+                              <div class="frame-child36"></div>
+                              <div class="div19">₹2499</div>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="flex-box-inner">
+                          <img
+                            class="frame-child37"
+                            alt=""
+                            src="./public/group-31.svg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="heading">
+                  <a href="item-page.html">
+                  <div class="men-card-10">
+                    <img
+                      class="men-card-10-child"
+                      alt=""
+                      src="./public/rectangle-9.svg"
+                    />
+
+                    <img
+                      class="men-card-10-item"
+                      alt=""
+                      src="./public/rectangle-17-31@2x.png"
+                    />
+
+                    <div class="symbol">
+                      <div class="icon">
+                        <div class="image">
+                          <div class="video">
+                            <div class="rick-morty">
+                              Rick & Morty Sweatshirt
+                            </div>
+                            <div class="gauge-parent">
+                              <div class="gauge"></div>
+                              <div class="meter"></div>
+                              <div class="timer"></div>
+                            </div>
+                          </div>
+                          <button class="calendar">
+                            <div class="calendar-child"></div>
+                            <div class="div20">₹2499</div>
+                          </button>
+                        </div>
+                        <div class="icon-inner">
+                          <img
+                            class="frame-child38"
+                            alt=""
+                            src="./public/group-3-3.svg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div></a>
+                </div>
+              </div>
+              <div class="loop-control">
+                <a href="item-page.html">
+                <div class="men-card-2">
+                  <img
+                    class="men-card-2-child"
+                    alt=""
+                    src="./public/rectangle-9.svg"
+                  />
+
+                  <img
+                    class="men-card-2-item"
+                    alt=""
+                    src="./public/rectangle-17-4@2x.png"
+                  />
+
+                  <div class="expression-evaluator">
+                    <div class="input-splitter">
+                      <div class="data-joiner">
+                        <div class="relaxed-fit-hoodie1">
+                          Relaxed Fit Hoodie
+                        </div>
+                        <div class="data-writer">
+                          <div class="ellipse-parent7">
+                            <div class="frame-child39"></div>
+                            <div class="frame-child40"></div>
+                            <div class="frame-child41"></div>
+                          </div>
+                          <button class="error-collector">
+                            <div class="error-collector-child"></div>
+                            <div class="div21">₹1899</div>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="input-splitter-inner">
+                        <img
+                          class="frame-child42"
+                          alt=""
+                          src="./public/group-31.svg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div></a>
+                <a href="item-page.html">
+                <div class="men-card-5">
+                  <img
+                    class="men-card-5-child"
+                    alt=""
+                    src="./public/rectangle-9.svg"
+                  />
+
+                  <img
+                    class="men-card-5-item"
+                    alt=""
+                    src="./public/rectangle-17-5@2x.png"
+                  />
+
+                  <div class="men-card-5-inner">
+                    <div class="frame-parent17">
+                      <div class="frame-parent18">
+                        <div class="sage-sweatshirt-parent">
+                          <div class="sage-sweatshirt">Sage Sweatshirt</div>
+                          <div class="ellipse-parent8">
+                            <div class="frame-child43"></div>
+                            <div class="frame-child44"></div>
+                            <div class="frame-child45"></div>
+                          </div>
+                        </div>
+                        <button class="error-collector1">
+                          <div class="error-collector-item"></div>
+                          <div class="div22">₹1899</div>
+                        </button>
+                      </div>
+                      <div class="frame-wrapper12">
+                        <img
+                          class="frame-child46"
+                          alt=""
+                          src="./public/group-31.svg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div></a>
+                <div class="error-handler">
+                  <a href="item-page.html">
+                  <div class="men-card-81">
+                    <img
+                      class="men-card-8-child1"
+                      alt=""
+                      src="./public/rectangle-9.svg"
+                    />
+
+                    <img
+                      class="men-card-8-child2"
+                      alt=""
+                      src="./public/rectangle-17-6@2x.png"
+                    />
+
+                    <div class="function-applier">
+                      <div class="data-sorter">
+                        <div class="input-merger">
+                          <div class="constant-provider">
+                            <div class="squidward-printed-hoodie1">
+                              Squidward Printed Hoodie
+                            </div>
+                            <div class="sequence-connector-parent">
+                              <div class="sequence-connector"></div>
+                              <div class="parallel-splitter"></div>
+                              <div class="flow-controller"></div>
+                            </div>
+                          </div>
+                          <button class="error-collector2">
+                            <div class="error-collector-inner"></div>
+                            <div class="div23">₹1899</div>
+                          </button>
+                        </div>
+                        <div class="data-sorter-inner">
+                          <img
+                            class="frame-child47"
+                            alt=""
+                            src="./public/group-31.svg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div></a>
+                </div>
+                <div class="error-handler1">
+                  <a href="item-page.html">
+                  <div class="men-card-11">
+                    <img
+                      class="men-card-11-child"
+                      alt=""
+                      src="./public/rectangle-9.svg"
+                    />
+
+                    <img
+                      class="men-card-11-item"
+                      alt=""
+                      src="./public/rectangle-17-7@2x.png"
+                    />
+
+                    <div class="men-card-11-inner">
+                      <div class="frame-parent19">
+                        <div class="frame-parent20">
+                          <div class="regular-fit-hoodie-parent">
+                            <div class="regular-fit-hoodie">
+                              Regular Fit Hoodie
+                            </div>
+                            <div class="ellipse-parent9">
+                              <div class="frame-child48"></div>
+                              <div class="frame-child49"></div>
+                              <div class="frame-child50"></div>
+                            </div>
+                          </div>
+                          <button class="data-aggregator1">
+                            <div class="data-aggregator-child"></div>
+                            <div class="div24">₹1799</div>
+                          </button>
+                        </div>
+                        <div class="frame-wrapper13">
+                          <img
+                            class="frame-child51"
+                            alt=""
+                            src="./public/group-3-3.svg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div></a>
+                </div>
+              </div>
+              <div class="men-card-3-parent">
+                <a href="item-page.html">
+                <div class="men-card-31">
+                  <img
+                    class="men-card-3-child1"
+                    alt=""
+                    src="./public/rectangle-9.svg"
+                  />
+
+                  <img
+                    class="men-card-3-child2"
+                    alt=""
+                    src="./public/rectangle-17-8@2x.png"
+                  />
+
+                  <div class="men-card-3-inner1">
+                    <div class="frame-parent21">
+                      <div class="relaxed-fit-sweatshirt-group">
+                        <div class="relaxed-fit-sweatshirt1">
+                          Relaxed Fit Sweatshirt
+                        </div>
+                        <div class="frame-parent22">
+                          <div class="ellipse-parent10">
+                            <div class="frame-child52"></div>
+                            <div class="frame-child53"></div>
+                            <div class="frame-child54"></div>
+                          </div>
+                          <button class="rectangle-parent8">
+                            <div class="frame-child55"></div>
+                            <div class="div25">₹1799</div>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="frame-wrapper14">
+                        <img
+                          class="frame-child56"
+                          alt=""
+                          src="./public/group-31.svg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div></a>
+                <a href="item-page.html">
+                <div class="men-card-6">
+                  <img
+                    class="men-card-6-child"
+                    alt=""
+                    src="./public/rectangle-9.svg"
+                  />
+
+                  <img
+                    class="men-card-6-item"
+                    alt=""
+                    src="./public/rectangle-17-9@2x.png"
+                  />
+
+                  <div class="men-card-6-inner">
+                    <div class="frame-parent23">
+                      <div class="relaxed-fit-sweatshirt-container">
+                        <div class="relaxed-fit-sweatshirt2">
+                          Relaxed Fit Sweatshirt
+                        </div>
+                        <div class="frame-parent24">
+                          <div class="ellipse-parent11">
+                            <div class="frame-child57"></div>
+                            <div class="frame-child58"></div>
+                            <div class="frame-child59"></div>
+                          </div>
+                          <button class="rectangle-parent9">
+                            <div class="frame-child60"></div>
+                            <div class="div26">₹1799</div>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="frame-wrapper15">
+                        <img
+                          class="frame-child61"
+                          alt=""
+                          src="./public/group-31.svg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div></a>
+                <div class="men-card-9-wrapper">
+                  <a href="item-page.html">
+                  <div class="men-card-91">
+                    <img
+                      class="men-card-9-child1"
+                      alt=""
+                      src="./public/rectangle-9.svg"
+                    />
+
+                    <img
+                      class="men-card-9-child2"
+                      alt=""
+                      src="./public/rectangle-17-10@2x.png"
+                    />
+
+                    <div class="men-card-9-inner1">
+                      <div class="frame-parent25">
+                        <div class="relaxed-fit-hoodie-group">
+                          <div class="relaxed-fit-hoodie2">
+                            Relaxed Fit Hoodie
+                          </div>
+                          <div class="frame-parent26">
+                            <div class="ellipse-parent12">
+                              <div class="frame-child62"></div>
+                              <div class="frame-child63"></div>
+                              <div class="frame-child64"></div>
+                            </div>
+                            <button class="rectangle-parent10">
+                              <div class="frame-child65"></div>
+                              <div class="div27">₹1799</div>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="frame-wrapper16">
+                          <img
+                            class="frame-child66"
+                            alt=""
+                            src="./public/group-31.svg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div></a>
+                </div>
+                <div class="men-card-12-wrapper">
+                  <a href="item-page.html">
+                  <div class="men-card-12">
+                    <img
+                      class="men-card-12-child"
+                      alt=""
+                      src="./public/rectangle-9.svg"
+                    />
+
+                    <img
+                      class="men-card-12-item"
+                      alt=""
+                      src="./public/rectangle-17-111@2x.png"
+                    />
+
+                    <div class="men-card-12-inner">
+                      <div class="frame-parent27">
+                        <div class="relaxed-fit-sweatshirt-parent1">
+                          <div class="relaxed-fit-sweatshirt3">
+                            Relaxed Fit Sweatshirt
+                          </div>
+                          <div class="frame-parent28">
+                            <div class="ellipse-parent13">
+                              <div class="frame-child67"></div>
+                              <div class="frame-child68"></div>
+                              <div class="frame-child69"></div>
+                            </div>
+                            <button class="data-aggregator2">
+                              <div class="data-aggregator-item"></div>
+                              <div class="div28">₹1799</div>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="frame-wrapper17">
+                          <img
+                            class="frame-child70"
+                            alt=""
+                            src="./public/group-3-3.svg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div></a>
+                </div>
+              </div>
+            </div>
+            <div class="frame-wrapper18">
+              <div class="rectangle-parent11">
+                <div class="frame-child71"></div>
+                <div class="load-more-products1">LOAD MORE PRODUCTS</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="info1">
+        <div class="info-item"></div>
+        <div class="filter-chain">
+          <div class="navigation1">Navigation</div>
+          <div class="image-analyzer1">
+            <div class="home-about-us-container1">
+              <a href="home.html">
+              <p class="home1">Home</p>
+              </a>
+              <p class="faq1">FAQ</p>
+              <p class="investor-relations1">Investor Relations</p>
+              <p class="jobs1">Jobs</p>
+              <p class="about-us1">About Us</p>
+              <p class="help-centre1">Help Centre</p>
+            </div>
+          </div>
+        </div>
+        <div class="user-input">
+          <div class="response-builder">
+            <div class="error-handler2">
+              <div class="sorting-tree">
+                <div class="talk-to-us2">TALK TO US</div>
+              </div>
+              <div class="supportapcomcom-61">
+                <p class="rakesh22bce7907vitaspstudent1">
+                  rakesh.22bce7907@vitaspstudent.ac.in
+                </p>
+                <p class="p1">+919640761055</p>
+              </div>
+            </div>
+            <div class="apcom-all-ri-container">
+              <div class="apcom-all-ri1">© 2024 SS. All Rights Reserved.</div>
+            </div>
+          </div>
+        </div>
+        <div class="form-validator">
+          <div class="database-connection">
+            <div class="network-interface">
+              <div class="talk-to-us3">Follow us</div>
+            </div>
+            <div class="user-interface">
+              <div class="facebook-icon1">
+                <div class="queue-manager"></div>
+                <img
+                  class="shape-icon1"
+                  loading="lazy"
+                  alt=""
+                  src="./public/shape.svg"
+                />
+              </div>
+              <img
+                class="linkedin-icon1"
+                loading="lazy"
+                alt=""
+                src="./public/linkedin-icon.svg"
+              />
+
+              <div class="twitter-icon2">
+                <div class="rectangle1"></div>
+                <img
+                  class="twitter-icon3"
+                  loading="lazy"
+                  alt=""
+                  src="./public/twitter.svg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

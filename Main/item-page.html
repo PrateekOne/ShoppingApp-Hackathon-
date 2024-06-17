@@ -1,0 +1,2884 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./item-page.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Average Sans:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Viga:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Merriweather Sans:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Viaoda Libre:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Voltaire:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Asar:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Sans Serif Collection:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Verdana:wght@400&display=swap"
+    />
+    <style>
+      .top-bar {
+  height: 80px;
+  width: 1440px;
+  position: relative;
+  background-color: var(--primary-white);
+  display: none;
+  max-width: 100%;
+}
+.menu-01-icon {
+  width: 51px;
+  height: 51px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.menu-01-wrapper {
+  height: 51px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-9xs) 0 0;
+  box-sizing: border-box;
+}
+.fi-br-search-icon {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.fi-br-search-wrapper {
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-10xs) 0 0;
+  box-sizing: border-box;
+}
+.user-01-icon {
+  width: 54px;
+  height: 54px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.user-01-wrapper {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-10xs) 0 0;
+}
+.fi-br-shopping-cart-icon {
+  width: 46px;
+  height: 46px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.fi-br-shopping-cart-wrapper {
+  height: 49px;
+  width: 46px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-10xs) 0 0;
+  box-sizing: border-box;
+}
+.home-05-icon {
+  width: 54px;
+  height: 54px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  mix-blend-mode: normal;
+  z-index: 1;
+}
+.home-05-wrapper {
+  height: 55px;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-12xs) 0 0;
+  box-sizing: border-box;
+}
+.frame-parent,
+.frame-wrapper,
+.home-05-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+.frame-parent {
+  align-self: stretch;
+  flex: 1;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 17px;
+}
+.frame-wrapper {
+  height: 58.4px;
+  width: 322px;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 0 1.4000000000000057px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.sign-in {
+  margin: 0;
+  height: 28.5px;
+  position: relative;
+  font-size: inherit;
+  font-weight: 900;
+  font-family: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+  min-width: 62.90000000000009px;
+  white-space: nowrap;
+  box-sizing: border-box;
+  padding-right: 0;
+  z-index: 1;
+}
+.sign-in-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20.19999999999999px 0 0;
+}
+.bg,
+.sign-up {
+  position: relative;
+}
+.bg {
+  height: 66.4px;
+  width: 180.3px;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-black);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15);
+  display: none;
+}
+.sign-up {
+  flex: 1;
+  font-size: var(--app-input-16m-size);
+  line-height: 100%;
+  font-family: var(--font-poppins);
+  color: var(--primary-white);
+  text-align: center;
+  z-index: 1;
+}
+.button,
+.frame-group {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: 23.69999999999999px var(--padding-35xl) 23.700000000000017px
+    53.399999999999864px;
+  background-color: var(--color-black);
+  flex: 1;
+  border-radius: var(--br-3xs);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15);
+  white-space: nowrap;
+  z-index: 1;
+}
+.button:hover {
+  background-color: var(--color-darkslategray-400);
+}
+.frame-group {
+  width: 312px;
+  gap: 68.79999999999995px;
+}
+.seamless-logo,
+.top-bar-parent {
+  display: flex;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.top-bar-parent {
+  align-self: stretch;
+  background-color: var(--primary-white);
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: var(--padding-7xs) var(--padding-8xs) 7.599999999999994px
+    var(--padding-3xs);
+  gap: var(--gap-xl);
+}
+.seamless-logo {
+  width: 1430px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-10xs);
+}
+.seamless-shopping-logo {
+  height: 90px;
+  width: 725px;
+  position: relative;
+  font-size: var(--font-size-61xl);
+  font-weight: 400;
+  font-family: var(--font-average-sans);
+  background: linear-gradient(
+    192.33deg,
+    #0a001c,
+    #0a001c 0.01%,
+    #28007d 48.4%,
+    #cc00d0 97.4%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  z-index: 1;
+  margin: 0 0 0-983px;
+}
+.seamless-logo-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0 0 0 var(--padding-3xs);
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--app-input-16m-size);
+  color: var(--color-darkslategray-100);
+  font-family: var(--font-poppins);
+}
+.frame-child,
+.frame-inner,
+.frame-item {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  min-height: 263px;
+}
+.frame-div {
+  align-self: stretch;
+  display: grid;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 59.85000000000002px;
+  max-width: 100%;
+  grid-template-columns: repeat(3, minmax(318px, 1fr));
+}
+.vision-alta-mens {
+  margin: 0 !important;
+  height: 71px;
+  width: 1256px;
+  position: absolute;
+  right: -631.8px;
+  bottom: 85px;
+  font-size: inherit;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+.nike-sneakers,
+.uk {
+  position: relative;
+  font-weight: 600;
+}
+.nike-sneakers {
+  margin: 0;
+  width: 431px;
+  height: 90px;
+  font-size: inherit;
+  line-height: 22px;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.uk {
+  line-height: 16px;
+  display: inline-block;
+  min-width: 34px;
+}
+.component-64 {
+  width: 108.3px;
+  border-radius: var(--br-9xs);
+  border: 1.5px solid var(--primary-white);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 26.700000000000045px var(--padding-5xs) 26.59999999999991px;
+}
+.uk1 {
+  position: relative;
+  line-height: 16px;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 34px;
+}
+.component-65 {
+  width: 108.3px;
+  border-radius: var(--br-9xs);
+  background-color: #af3f3f;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 26.700000000000045px var(--padding-5xs) 26.59999999999991px;
+  box-sizing: border-box;
+}
+.uk2 {
+  position: relative;
+  line-height: 16px;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 35px;
+}
+.component-66 {
+  width: 110.5px;
+  border-radius: var(--br-9xs);
+  border: 1.5px solid var(--primary-white);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 26.700000000000045px var(--padding-5xs) 26.59999999999991px;
+}
+.uk3 {
+  position: relative;
+  line-height: 16px;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 34px;
+}
+.component-67 {
+  width: 108.3px;
+  border-radius: var(--br-9xs);
+  border: 1.5px solid var(--primary-white);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 26.700000000000045px var(--padding-5xs) 26.59999999999991px;
+}
+.uk4 {
+  position: relative;
+  line-height: 16px;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 40px;
+}
+.component-64-parent,
+.component-68 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.component-68 {
+  width: 121.3px;
+  border-radius: var(--br-9xs);
+  border: 1.5px solid var(--primary-white);
+  box-sizing: border-box;
+  justify-content: flex-start;
+  padding: 26.700000000000045px var(--padding-5xs) 26.59999999999991px;
+  min-width: 40px;
+}
+.component-64-parent {
+  align-self: stretch;
+  justify-content: center;
+  gap: 16.824999999999932px;
+  font-size: var(--m-size);
+}
+.frame-wrapper1,
+.nike-sneakers-parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.nike-sneakers-parent {
+  flex: 1;
+  flex-direction: column;
+  gap: 16px;
+}
+.frame-wrapper1 {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-11xs);
+  box-sizing: border-box;
+}
+.ellipse-div {
+  width: 38px;
+  height: 38px;
+  position: relative;
+  border-radius: 50%;
+  background-color: #f77;
+  border: 0 solid var(--primary-white);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.ellipse-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-9xs) 0 0;
+}
+.frame-child1,
+.frame-child2 {
+  height: 38px;
+  width: 38px;
+  position: relative;
+  border-radius: 50%;
+  background-color: #3d5cff;
+  border: 0 solid var(--primary-white);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.frame-child2 {
+  background-color: #ebff00;
+}
+.ellipse-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-9xs) 0 0;
+}
+.frame-child3 {
+  height: 38px;
+  width: 38px;
+  position: relative;
+  border-radius: 50%;
+  background-color: #00a3ff;
+  border: 0 solid var(--primary-white);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.frame-parent4,
+.frame-wrapper2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame-parent4 {
+  gap: var(--gap-lg);
+}
+.frame-wrapper2 {
+  padding: 0 var(--padding-4xs);
+}
+.similar-products {
+  margin: 0;
+  height: 15px;
+  position: relative;
+  font-size: inherit;
+  line-height: 22px;
+  font-weight: 600;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.frame-parent3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 29.700000000000045px;
+  font-size: 32px;
+}
+.frame-parent2,
+.vision-alta-mens-shoes-size-parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.frame-parent2 {
+  flex: 1;
+  flex-direction: column;
+  gap: 76.70000000000005px;
+  font-size: 58px;
+}
+.vision-alta-mens-shoes-size-parent {
+  width: 626px;
+  flex-direction: row;
+  position: relative;
+  min-width: 626px;
+}
+.component-1-icon,
+.component-3-icon {
+  height: 53.4px;
+  width: 40.3px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 53px;
+}
+.component-3-icon {
+  z-index: 1;
+}
+.component-4-icon {
+  z-index: 2;
+}
+.component-1-icon1,
+.component-4-icon,
+.component-5-icon {
+  height: 53.4px;
+  width: 40.3px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 53px;
+}
+.component-1-parent {
+  height: 53.4px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.025000000000034103px;
+}
+.div {
+  align-self: stretch;
+  height: 41.6px;
+  position: relative;
+  line-height: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.frame-parent8,
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.wrapper {
+  width: 107.5px;
+  flex-direction: column;
+  padding: 5.899999999999977px 0 0;
+  box-sizing: border-box;
+}
+.frame-parent8 {
+  flex-direction: row;
+  gap: 17.90000000000009px;
+  max-width: 100%;
+}
+.div1,
+.line-div {
+  position: absolute;
+}
+.div1 {
+  top: -0.5px;
+  left: -1px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  width: 81px;
+  height: 32.6px;
+  white-space: nowrap;
+}
+.line-div {
+  top: 18.3px;
+  left: 0;
+  background-color: var(--shades-of-black-grey4);
+  border-top: 0.8px solid var(--medium-gray2);
+  box-sizing: border-box;
+  width: 90.7px;
+  height: 0;
+  z-index: 1;
+}
+.div2,
+.parent {
+  height: 32.6px;
+  position: relative;
+}
+.parent {
+  width: 90.7px;
+}
+.div2 {
+  line-height: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-12xs);
+  font-size: var(--font-size-6xl);
+  color: var(--primary-white);
+}
+.off {
+  height: 34.4px;
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-7xl);
+  line-height: 16px;
+  font-weight: 600;
+  color: var(--success-error-blue);
+  display: flex;
+  align-items: center;
+  min-width: 83px;
+}
+.price-label,
+.price-label-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.price-label {
+  flex: 1;
+  align-items: flex-end;
+  gap: 6.449999999999932px;
+}
+.price-label-wrapper {
+  align-self: stretch;
+  align-items: flex-start;
+  padding: 0 0 0 var(--padding-10xs);
+  box-sizing: border-box;
+}
+.product-details {
+  margin: 0;
+  width: 210.4px;
+  height: 32.6px;
+  position: relative;
+  font-size: var(--font-size-xl);
+  line-height: 16px;
+  font-weight: 500;
+  font-family: inherit;
+  color: var(--primary-white);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.frame-parent7,
+.frame-parent9 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.frame-parent9 {
+  align-self: stretch;
+  gap: 13.799999999999956px;
+  font-size: var(--font-size-5xl);
+  color: var(--medium-gray2);
+}
+.frame-parent7 {
+  flex: 1;
+  gap: 7.100000000000023px;
+  min-width: 222px;
+}
+.buy-now-child {
+  height: 51.5px;
+  width: 191px;
+  position: relative;
+  border-radius: var(--br-41xl);
+  background-color: var(--primary-white);
+  display: none;
+}
+.buy-now1 {
+  position: relative;
+  font-size: var(--font-size-6xl);
+  line-height: 16px;
+  font-weight: 500;
+  font-family: var(--app-m10);
+  color: var(--color-black);
+  text-align: left;
+  z-index: 1;
+}
+.add-to-cart-child,
+.buy-now {
+  border-radius: var(--br-41xl);
+  background-color: var(--primary-white);
+}
+.buy-now {
+  cursor: pointer;
+  border: 0;
+  padding: 18.299999999999955px 26.199999999999815px 19.200000000000045px
+    27.90000000000009px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  white-space: nowrap;
+}
+.add-to-cart:hover,
+.buy-now:hover {
+  background-color: var(--color-gainsboro-100);
+}
+.add-to-cart-child {
+  height: 51.5px;
+  width: 191px;
+  position: relative;
+  display: none;
+}
+.add-to-cart1 {
+  position: relative;
+  font-size: var(--font-size-6xl);
+  line-height: 16px;
+  font-weight: 500;
+  font-family: var(--app-m10);
+  color: var(--color-black);
+  text-align: left;
+  z-index: 1;
+}
+.add-to-cart {
+  cursor: pointer;
+  border: 0;
+  padding: 18.399999999999977px var(--padding-mid-5) 19.100000000000023px
+    20.90000000000009px;
+  background-color: var(--primary-white);
+  border-radius: var(--br-41xl);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  white-space: nowrap;
+  z-index: 3;
+}
+.buy-now-parent {
+  flex-direction: column;
+  gap: 19.899999999999977px;
+}
+.buy-now-parent,
+.frame-parent6,
+.frame-wrapper4 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame-wrapper4 {
+  flex-direction: column;
+  padding: 8.100000000000023px 0 0;
+  box-sizing: border-box;
+  min-width: 191px;
+}
+.frame-parent6 {
+  width: 558px;
+  flex-direction: row;
+  gap: 25px;
+  max-width: 100%;
+}
+.span {
+  color: var(--shades-of-black-grey3);
+}
+.more {
+  color: var(--success-error-blue);
+}
+.perhaps-the-most-container {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-mid);
+  line-height: 16px;
+  font-weight: 400;
+  font-family: inherit;
+  z-index: 1;
+  color: var(--primary-white);
+}
+.frame-parent5,
+.frame-wrapper3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.frame-parent5 {
+  align-self: stretch;
+  justify-content: flex-start;
+  gap: 15.799999999999956px;
+}
+.frame-wrapper3 {
+  width: 622px;
+  justify-content: flex-end;
+  min-width: 622px;
+  min-height: 277px;
+  font-size: var(--m-size);
+  color: var(--shades-of-black-grey3);
+}
+.frame-container,
+.frame-parent1 {
+  display: flex;
+  align-items: flex-end;
+  max-width: 100%;
+}
+.frame-parent1 {
+  width: 1369px;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.frame-container {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-lgi);
+}
+.item-page-inner {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 24.799999999999955px 14.299999999999956px 25px;
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: left;
+  font-size: 28px;
+  color: var(--primary-white);
+  font-family: var(--app-m10);
+}
+.info-child {
+  height: 314px;
+  width: 1435px;
+  position: relative;
+  background-color: var(--color-black);
+  display: none;
+  max-width: 100%;
+  z-index: 0;
+}
+.navigation {
+  margin: 0;
+  height: 19.5px;
+  position: relative;
+  font-size: inherit;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+  z-index: 1;
+}
+.home {
+  white-space: pre-wrap;
+}
+.about-us,
+.faq,
+.help-centre,
+.home,
+.investor-relations,
+.jobs {
+  margin: 0;
+}
+.home-about-us-container {
+  margin: 0;
+  height: 184.6px;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  line-height: 30px;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  mix-blend-mode: normal;
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+  z-index: 1;
+}
+.home-about-us-what-w-wrapper,
+.navigation-parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.home-about-us-what-w-wrapper {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-9xs);
+  font-size: var(--m-size);
+  color: var(--color-gray-600);
+}
+.navigation-parent {
+  width: 198px;
+  flex-direction: column;
+  padding: 0 24.799999999999955px 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-xs-5);
+  font-size: var(--font-size-xl);
+  color: var(--primary-white);
+  font-family: var(--font-viga);
+}
+.talk-to-us {
+  margin: 0;
+  height: 30px;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  z-index: 1;
+}
+.talk-to-us-wrapper {
+  width: 261px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-40xl);
+  box-sizing: border-box;
+}
+.p,
+.rakesh22bce7907vitaspstudent {
+  margin: 0;
+}
+.supportapcomcom-6 {
+  align-self: stretch;
+  height: 71px;
+  position: relative;
+  font-size: var(--app-input-16m-size);
+  line-height: 30px;
+  color: var(--color-gray-600);
+  display: inline-block;
+  flex-shrink: 0;
+  mix-blend-mode: normal;
+  z-index: 1;
+}
+.contact-us-c-t-a {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.apcom-all-ri {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  line-height: 14px;
+  font-weight: 400;
+  font-family: inherit;
+  z-index: 1;
+}
+.apcom-all-ri-wrapper,
+.contact-us-c-t-a-parent,
+.info-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.apcom-all-ri-wrapper {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 var(--padding-sm) 0 var(--padding-4xs);
+  text-align: center;
+  font-size: var(--m-size);
+  font-family: var(--font-roboto);
+}
+.contact-us-c-t-a-parent,
+.info-inner {
+  flex-direction: column;
+}
+.contact-us-c-t-a-parent {
+  align-self: stretch;
+  gap: 83px;
+}
+.info-inner {
+  width: 307px;
+  padding: var(--padding-12xs) 0 0;
+  box-sizing: border-box;
+  font-size: var(--font-size-xl);
+  color: var(--primary-white);
+  font-family: var(--font-viga);
+}
+.talk-to-us1 {
+  margin: 0;
+  height: 19.5px;
+  position: relative;
+  font-size: inherit;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  z-index: 1;
+}
+.talk-to-us-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-26xl);
+}
+.twitter-icon {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-lgi-5);
+  border: 1px solid var(--primary-white);
+  box-sizing: border-box;
+  opacity: 0.25;
+}
+.shape-icon {
+  position: absolute;
+  height: 38.52%;
+  width: 18.01%;
+  top: 30.74%;
+  right: 41.09%;
+  bottom: 30.74%;
+  left: 40.9%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  z-index: 1;
+}
+.facebook-icon,
+.linkedin-icon {
+  height: 54px;
+  position: relative;
+  z-index: 1;
+}
+.facebook-icon {
+  flex: 1;
+}
+.linkedin-icon {
+  width: 53.3px;
+  min-height: 54px;
+}
+.rectangle {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-lgi-5);
+  border: 1px solid var(--primary-white);
+  box-sizing: border-box;
+  opacity: 0.25;
+}
+.twitter-icon2 {
+  position: absolute;
+  height: 28.15%;
+  width: 33.4%;
+  top: 35.93%;
+  right: 33.21%;
+  bottom: 35.93%;
+  left: 33.4%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  z-index: 1;
+}
+.twitter-icon1 {
+  height: 54px;
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+.frame-parent10,
+.info-inner1,
+.social-media-icons {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.social-media-icons {
+  align-self: stretch;
+  flex: 1;
+  flex-direction: row;
+  gap: 19.050000000000068px;
+}
+.frame-parent10,
+.info-inner1 {
+  flex-direction: column;
+}
+.frame-parent10 {
+  align-self: stretch;
+  flex: 1;
+  gap: var(--gap-lg-5);
+}
+.info-inner1 {
+  height: 93px;
+  width: 198px;
+  padding: var(--padding-12xs) 0 0;
+  box-sizing: border-box;
+  font-size: var(--font-size-xl);
+  color: var(--primary-white);
+  font-family: var(--font-viga);
+}
+.instance-child {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-5xs);
+  background-color: var(--primary-white);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+.unsplashmhuk4se7pey-icon {
+  align-self: stretch;
+  height: 213.7px;
+  position: relative;
+  border-radius: var(--br-5xs);
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+  z-index: 1;
+}
+.nike-sneakers1 {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  line-height: 20px;
+  font-weight: 500;
+  font-family: inherit;
+  z-index: 1;
+}
+.nike-sneakers-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 6.100000000000136px;
+}
+.div3,
+.vision-alta-mens1 {
+  position: relative;
+  line-height: 16px;
+  z-index: 1;
+}
+.vision-alta-mens1 {
+  align-self: stretch;
+  font-size: var(--app-m10-size);
+}
+.div3 {
+  width: 103.7px;
+  height: 23.6px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+}
+.component-1-icon2,
+.component-3-icon1,
+.component-4-icon1,
+.component-5-icon1 {
+  height: 22px;
+  width: 22px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 22px;
+}
+.component-1-icon3 {
+  width: 22px;
+  height: 22px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.component-1-wrapper {
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 6.300000000000182px 0 0;
+  box-sizing: border-box;
+}
+.div4 {
+  height: 22px;
+  flex: 1;
+  position: relative;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+}
+.component-1-group,
+.group {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.component-1-group {
+  align-self: stretch;
+  flex-direction: row;
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+  z-index: 1;
+  font-size: var(--app-m10-size);
+  color: var(--lite-black-grey);
+}
+.group {
+  width: 191.7px;
+  flex-direction: column;
+  gap: 6.200000000000273px;
+  font-size: var(--app-label-12m-size);
+}
+.frame-parent11,
+.frame-wrapper5 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+}
+.frame-parent11 {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 23.59999999999991px;
+}
+.frame-wrapper5 {
+  height: 141.1px;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0 var(--padding-smi-5) 0 var(--padding-smi);
+  box-sizing: border-box;
+}
+.instance-item,
+.rectangle-parent {
+  position: absolute;
+  margin: 0 !important;
+}
+.rectangle-parent {
+  height: 385px;
+  width: 257.7px;
+  top: -379px;
+  left: 37px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0 0 12.599999999999907px;
+  box-sizing: border-box;
+  gap: 17.59999999999991px;
+  z-index: 2;
+}
+.instance-item {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-5xs);
+  background-color: var(--primary-white);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+.unsplash76w-edo1u1e-icon {
+  align-self: stretch;
+  height: 213.7px;
+  position: relative;
+  border-radius: var(--br-5xs);
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+  z-index: 1;
+}
+.nike-sneakers2 {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  line-height: 20px;
+  font-weight: 500;
+  font-family: inherit;
+  z-index: 1;
+}
+.nike-sneakers-container {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 6.100000000000136px;
+}
+.div5,
+.vision-alta-mens2 {
+  position: relative;
+  line-height: 16px;
+  z-index: 1;
+}
+.vision-alta-mens2 {
+  align-self: stretch;
+  font-size: var(--app-m10-size);
+}
+.div5 {
+  width: 103.7px;
+  height: 23.6px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+}
+.component-1-icon4,
+.component-3-icon2,
+.component-4-icon2,
+.component-5-icon2 {
+  height: 22px;
+  width: 22px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 22px;
+}
+.component-1-icon5 {
+  width: 22px;
+  height: 22px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.component-1-frame {
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 6.2999999999999545px 0 0;
+  box-sizing: border-box;
+}
+.div6 {
+  height: 22px;
+  flex: 1;
+  position: relative;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+}
+.component-1-container {
+  align-self: stretch;
+  flex: 1;
+  flex-direction: row;
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+  z-index: 1;
+  font-size: var(--app-m10-size);
+  color: var(--lite-black-grey);
+}
+.component-1-container,
+.frame-parent12,
+.frame-wrapper6,
+.parent1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.parent1 {
+  width: 191.7px;
+  flex: 1;
+  flex-direction: column;
+  gap: 6.200000000000273px;
+  font-size: var(--app-label-12m-size);
+}
+.frame-parent12,
+.frame-wrapper6 {
+  align-self: stretch;
+}
+.frame-parent12 {
+  flex: 1;
+  flex-direction: column;
+  gap: 15.599999999999907px;
+}
+.frame-wrapper6 {
+  height: 141.1px;
+  flex-direction: row;
+  padding: 0 var(--padding-smi) 0 var(--padding-smi-5);
+  box-sizing: border-box;
+}
+.instance-inner,
+.rectangle-group {
+  position: absolute;
+  margin: 0 !important;
+}
+.rectangle-group {
+  height: 385px;
+  width: 257.7px;
+  top: -379px;
+  left: 319.9px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 12.599999999999907px;
+  box-sizing: border-box;
+  gap: 17.59999999999991px;
+  z-index: 2;
+}
+.instance-inner {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-5xs);
+  background-color: var(--primary-white);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+.unsplash76w-edo1u1e-icon1 {
+  align-self: stretch;
+  height: 213.7px;
+  position: relative;
+  border-radius: var(--br-5xs);
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+  z-index: 1;
+}
+.nike-sneakers3 {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  line-height: 20px;
+  font-weight: 500;
+  font-family: inherit;
+  z-index: 1;
+}
+.nike-sneakers-frame {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 6.100000000000136px;
+}
+.div7,
+.vision-delta-mens {
+  position: relative;
+  line-height: 16px;
+  z-index: 1;
+}
+.vision-delta-mens {
+  align-self: stretch;
+  font-size: var(--app-m10-size);
+}
+.div7 {
+  width: 103.7px;
+  height: 23.6px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+}
+.component-1-icon6,
+.component-3-icon3,
+.component-4-icon3,
+.component-5-icon3 {
+  height: 22px;
+  width: 22px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 22px;
+}
+.component-1-icon7 {
+  width: 22px;
+  height: 22px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.component-1-wrapper1 {
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 6.300000000000182px 0 0;
+  box-sizing: border-box;
+}
+.div8 {
+  height: 22px;
+  flex: 1;
+  position: relative;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+}
+.group-div,
+.parent2 {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.group-div {
+  align-self: stretch;
+  flex-direction: row;
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+  z-index: 1;
+  font-size: var(--app-m10-size);
+  color: var(--lite-black-grey);
+}
+.parent2 {
+  width: 191.7px;
+  flex-direction: column;
+  gap: 6.200000000000273px;
+  font-size: var(--app-label-12m-size);
+}
+.frame-parent13,
+.frame-wrapper7 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+}
+.frame-parent13 {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15.599999999999907px;
+}
+.frame-wrapper7 {
+  height: 141.1px;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0 12.500000000000227px 0 var(--padding-smi);
+  box-sizing: border-box;
+}
+.rectangle-container {
+  height: 385px;
+  width: 257.7px;
+  margin: 0 !important;
+  position: absolute;
+  top: -378px;
+  right: 9.3px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0 0 12.599999999999907px;
+  box-sizing: border-box;
+  gap: 17.59999999999991px;
+  z-index: 2;
+}
+.rectangle-div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-5xs);
+  background-color: var(--primary-white);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+.unsplashzbuws1el-50-icon {
+  align-self: stretch;
+  height: 213.7px;
+  position: relative;
+  border-radius: var(--br-5xs);
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+  z-index: 1;
+}
+.nike-sneakers4 {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  line-height: 20px;
+  font-weight: 500;
+  font-family: inherit;
+  z-index: 1;
+}
+.nike-sneakers-wrapper1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 6.100000000000136px;
+}
+.div9,
+.vision-alta-mens3 {
+  position: relative;
+  line-height: 16px;
+  z-index: 1;
+}
+.vision-alta-mens3 {
+  align-self: stretch;
+  font-size: var(--app-m10-size);
+}
+.div9 {
+  width: 103.7px;
+  height: 23.6px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+}
+.component-1-icon8,
+.component-3-icon4,
+.component-4-icon4,
+.component-5-icon4 {
+  height: 22px;
+  width: 22px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 22px;
+}
+.component-1-icon9 {
+  width: 22px;
+  height: 22px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.component-1-wrapper2 {
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 6.2999999999999545px 0 0;
+  box-sizing: border-box;
+}
+.div10 {
+  height: 22px;
+  flex: 1;
+  position: relative;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+}
+.component-1-parent1,
+.parent3 {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.component-1-parent1 {
+  align-self: stretch;
+  flex-direction: row;
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+  z-index: 1;
+  font-size: var(--app-m10-size);
+  color: var(--lite-black-grey);
+}
+.parent3 {
+  width: 191.7px;
+  flex-direction: column;
+  gap: 6.200000000000273px;
+  font-size: var(--app-label-12m-size);
+}
+.frame-parent14,
+.frame-wrapper8 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+}
+.frame-parent14 {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15.599999999999907px;
+}
+.frame-wrapper8 {
+  height: 141.1px;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0 12.500000000000227px 0 var(--padding-smi);
+  box-sizing: border-box;
+}
+.rectangle-parent1 {
+  height: 385px;
+  width: 257.7px;
+  margin: 0 !important;
+  position: absolute;
+  top: -379px;
+  right: 574.6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0 0 12.599999999999907px;
+  box-sizing: border-box;
+  gap: 17.59999999999991px;
+  z-index: 2;
+}
+.instance-child1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-5xs);
+  background-color: var(--primary-white);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+.unsplashfur3lnii2jc-icon {
+  align-self: stretch;
+  height: 213.7px;
+  position: relative;
+  border-radius: var(--br-5xs);
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+  z-index: 1;
+}
+.nike-sneakers5 {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  line-height: 20px;
+  font-weight: 500;
+  font-family: inherit;
+  z-index: 1;
+}
+.nike-sneakers-wrapper2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 6.100000000000136px;
+}
+.div11,
+.vision-alta-mens4 {
+  position: relative;
+  line-height: 16px;
+  z-index: 1;
+}
+.vision-alta-mens4 {
+  align-self: stretch;
+  font-size: var(--app-m10-size);
+}
+.div11 {
+  width: 103.7px;
+  height: 23.6px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+}
+.component-1-icon10,
+.component-3-icon5,
+.component-4-icon5,
+.component-5-icon5 {
+  height: 22px;
+  width: 22px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 22px;
+}
+.component-1-icon11 {
+  width: 22px;
+  height: 22px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.component-1-wrapper3 {
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 6.300000000000182px 0 0;
+  box-sizing: border-box;
+}
+.div12 {
+  height: 22px;
+  flex: 1;
+  position: relative;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+}
+.component-1-parent2 {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  debug_commit: 1cbd860;
+  z-index: 1;
+  font-size: var(--app-m10-size);
+  color: var(--lite-black-grey);
+}
+.parent4 {
+  width: 191.7px;
+  flex: 1;
+  flex-direction: column;
+  gap: 6.200000000000273px;
+  font-size: var(--app-label-12m-size);
+}
+.frame-parent15,
+.frame-wrapper9,
+.parent4,
+.rectangle-parent2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame-parent15 {
+  align-self: stretch;
+  flex: 1;
+  flex-direction: column;
+  gap: 23.59999999999991px;
+}
+.frame-wrapper9,
+.rectangle-parent2 {
+  box-sizing: border-box;
+}
+.frame-wrapper9 {
+  align-self: stretch;
+  height: 141.1px;
+  flex-direction: row;
+  padding: 0 var(--padding-smi) 0 var(--padding-smi-5);
+}
+.rectangle-parent2 {
+  height: 385px;
+  width: 257.7px;
+  margin: 0 !important;
+  position: absolute;
+  top: -379px;
+  right: 291.7px;
+  flex-direction: column;
+  padding: 0 0 12.599999999999907px;
+  gap: 17.59999999999991px;
+  z-index: 2;
+}
+.info {
+  flex: 1;
+  justify-content: space-between;
+  padding: 36px var(--padding-255xl) 62.40000000000009px var(--padding-259xl);
+  position: relative;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--app-input-16m-size);
+  color: var(--color-black);
+  font-family: var(--app-m10);
+}
+.info,
+.info-wrapper,
+.item-page-child {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.info-wrapper {
+  height: 641px;
+  flex: 1;
+  justify-content: flex-start;
+  padding: 379px 0 0;
+}
+.item-page-child {
+  align-self: stretch;
+  justify-content: flex-end;
+  padding: 0 var(--padding-11xs) 0 var(--padding-10xs);
+}
+.item-page {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-black);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-20xl);
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1325px) {
+  .vision-alta-mens-shoes-size-parent {
+    flex: 1;
+  }
+  .frame-wrapper3 {
+    flex: 1;
+    min-height: auto;
+  }
+  .frame-parent1,
+  .info {
+    flex-wrap: wrap;
+  }
+  .info-wrapper {
+    height: auto;
+  }
+}
+@media screen and (max-width: 1125px) {
+  .frame-div {
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(318px, 551px));
+  }
+}
+@media screen and (max-width: 800px) {
+  .frame-child,
+  .frame-inner,
+  .frame-item {
+    width: 100%;
+  }
+  .frame-div {
+    gap: 59.85000000000002px 30px;
+    grid-template-columns: minmax(318px, 1fr);
+  }
+  .nike-sneakers {
+    font-size: 46px;
+    line-height: 18px;
+  }
+  .component-64-parent {
+    flex-wrap: wrap;
+  }
+  .similar-products {
+    font-size: var(--font-size-7xl);
+    line-height: 18px;
+  }
+  .frame-parent2 {
+    gap: 38px 76.70000000000005px;
+  }
+  .vision-alta-mens-shoes-size-parent {
+    min-width: 100%;
+  }
+  .frame-wrapper4 {
+    flex: 1;
+  }
+  .frame-parent6 {
+    flex-wrap: wrap;
+  }
+  .frame-wrapper3 {
+    min-width: 100%;
+  }
+  .info,
+  .info-wrapper {
+    box-sizing: border-box;
+  }
+  .info {
+    padding-left: var(--padding-120xl);
+    padding-right: var(--padding-118xl);
+  }
+  .info-wrapper {
+    padding-top: 246px;
+  }
+  .item-page {
+    gap: 19px 39px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .frame-group {
+    gap: 68.79999999999995px 34px;
+  }
+  .nike-sneakers,
+  .vision-alta-mens {
+    font-size: 22px;
+    line-height: 13px;
+  }
+  .nike-sneakers {
+    font-size: 35px;
+  }
+  .similar-products {
+    font-size: var(--font-size-lgi);
+    line-height: 13px;
+  }
+  .frame-parent2 {
+    gap: 19px 76.70000000000005px;
+  }
+  .frame-parent8 {
+    flex-wrap: wrap;
+  }
+  .div1,
+  .div2,
+  .off {
+    font-size: var(--font-size-lgi);
+    line-height: 13px;
+  }
+  .div2,
+  .off {
+    font-size: var(--font-size-xl);
+  }
+  .off {
+    font-size: var(--font-size-2xl);
+  }
+  .price-label {
+    flex-wrap: wrap;
+  }
+  .product-details {
+    line-height: 13px;
+  }
+  .navigation,
+  .product-details,
+  .talk-to-us {
+    font-size: var(--app-input-16m-size);
+  }
+  .talk-to-us-wrapper {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .contact-us-c-t-a-parent {
+    gap: 41px 83px;
+  }
+  .talk-to-us1 {
+    font-size: var(--app-input-16m-size);
+  }
+  .info {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --app-m10: Montserrat;
+  --font-viga: Viga;
+  --font-roboto: Roboto;
+  --font-average-sans: "Average Sans";
+  --font-poppins: Poppins;
+  --font-asar: Asar;
+  --font-voltaire: Voltaire;
+  --font-viaoda-libre: "Viaoda Libre";
+  --font-merriweather-sans: "Merriweather Sans";
+  --font-verdana: Verdana;
+  --font-sans-serif-collection: "Sans Serif Collection";
+
+  /* font sizes */
+  --app-m10-size: 10px;
+  --app-label-12m-size: 12px;
+  --app-input-16m-size: 16px;
+  --font-size-xl: 20px;
+  --m-size: 14px;
+  --font-size-mid: 17px;
+  --font-size-6xl: 25px;
+  --font-size-7xl: 26px;
+  --font-size-2xl: 21px;
+  --font-size-5xl: 24px;
+  --font-size-lgi: 19px;
+  --font-size-61xl: 80px;
+  --font-size-lg: 18px;
+  --font-size-31xl: 50px;
+  --font-size-21xl: 40px;
+  --font-size-11xl: 30px;
+  --font-size-36xl: 55px;
+
+  /* Colors */
+  --color-black: #000;
+  --lite-black-grey: #a4a9b3;
+  --primary-white: #fff;
+  --medium-gray2: #808488;
+  --shades-of-black-grey3: #828282;
+  --color-gray-100: #172328;
+  --color-gray-200: #131313;
+  --color-gray-300: #001923;
+  --color-gray-400: #07161d;
+  --color-gray-500: rgba(255, 255, 255, 0.5);
+  --color-gray-600: rgba(255, 255, 255, 0.8);
+  --success-error-blue: #1477f8;
+  --color-gainsboro-100: #e6e6e6;
+  --color-gainsboro-200: #d9d9d9;
+  --color-gainsboro-300: rgba(217, 217, 217, 0.31);
+  --shades-of-black-grey4: #bbb;
+  --color-darkslategray-100: #484848;
+  --color-darkslategray-200: #3b4a4f;
+  --color-darkslategray-300: #264653;
+  --color-darkslategray-400: #333;
+  --medium-lecture: #fe735c;
+  --dark-bag: #21003d;
+  --color-firebrick: #c10000;
+  --color-cadetblue: #2e96ad;
+
+  /* Gaps */
+  --gap-20xl: 39px;
+  --gap-lgi: 19px;
+  --gap-xl: 20px;
+  --gap-mid-6: 17.6px;
+  --gap-4xl-6: 23.6px;
+  --gap-6xs-2: 6.2px;
+  --gap-base-6: 15.6px;
+  --gap-lg-5: 18.5px;
+  --gap-xs: 12px;
+  --gap-xs-5: 11.5px;
+  --gap-83xl: 102px;
+  --gap-32xl: 51px;
+  --gap-3xs: 10px;
+  --gap-5xl-4: 24.4px;
+  --gap-22xl-2: 41.2px;
+  --gap-15xl-1: 34.1px;
+  --gap-4xs-2: 8.2px;
+  --gap-6xs-5: 6.5px;
+  --gap-7xs-5: 5.5px;
+  --gap-3xs-5: 9.5px;
+  --gap-10xs-8: 2.8px;
+  --gap-3xs-6: 9.6px;
+  --gap-mini-7: 14.7px;
+  --gap-5xs: 8px;
+  --gap-17xl-1: 36.1px;
+  --gap-lg: 18px;
+  --gap-10xs: 3px;
+  --gap-5xs-1: 7.1px;
+  --gap-2xs-1: 10.1px;
+
+  /* Paddings */
+  --padding-11xs: 2px;
+  --padding-10xs: 3px;
+  --padding-255xl: 274px;
+  --padding-259xl: 278px;
+  --padding-120xl: 139px;
+  --padding-118xl: 137px;
+  --padding-xl: 20px;
+  --padding-smi-6: 12.6px;
+  --padding-smi: 13px;
+  --padding-smi-5: 12.5px;
+  --padding-6xs-3: 6.3px;
+  --padding-6xs-1: 6.1px;
+  --padding-12xs: 1px;
+  --padding-26xl: 45px;
+  --padding-sm: 14px;
+  --padding-4xs: 9px;
+  --padding-40xl: 59px;
+  --padding-5xl-8: 24.8px;
+  --padding-9xs: 4px;
+  --padding-4xs-1: 8.1px;
+  --padding-mid-5: 17.5px;
+  --padding-xl-9: 20.9px;
+  --padding-7xl-7: 26.7px;
+  --padding-5xs: 8px;
+  --padding-7xl-6: 26.6px;
+  --padding-3xs: 10px;
+  --padding-7xs: 6px;
+  --padding-8xs: 5px;
+  --padding-35xl: 54px;
+  --padding-34xl: 53px;
+  --padding-11xl-6: 30.6px;
+  --padding-4xs-2: 8.2px;
+  --padding-4xs-3: 8.3px;
+  --padding-12xs-1: 0.1px;
+  --padding-xs: 12px;
+  --padding-220xl-5: 239.5px;
+  --padding-100xl: 119px;
+  --padding-6xs: 7px;
+  --padding-4xl-7: 23.7px;
+  --padding-lgi: 19px;
+  --padding-mini: 15px;
+  --padding-base: 16px;
+  --padding-3xl: 22px;
+  --padding-13xl: 32px;
+  --padding-8xs-7: 4.7px;
+  --padding-8xs-8: 4.8px;
+  --padding-lg: 18px;
+  --padding-7xs-3: 5.3px;
+  --padding-mid-6: 17.6px;
+  --padding-7xs-9: 5.9px;
+  --padding-7xl: 26px;
+  --padding-8xl: 27px;
+  --padding-7xs-1: 5.1px;
+  --padding-xl-1: 20.1px;
+  --padding-mid: 17px;
+  --padding-base-5: 16.5px;
+  --padding-2xl-9: 21.9px;
+  --padding-base-4: 15.4px;
+  --padding-2xs: 11px;
+  --padding-3xl-1: 22.1px;
+
+  /* Border radiuses */
+  --br-5xs: 8px;
+  --br-lgi-5: 19.5px;
+  --br-41xl: 60px;
+  --br-9xs: 4px;
+  --br-3xs: 10px;
+  --br-7xs: 6px;
+  --br-2xl: 21px;
+  --br-xl: 20px;
+  --br-4xs: 9px;
+  --br-6xl-5: 25.5px;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="item-page">
+      <header class="seamless-logo-parent">
+        <div class="seamless-logo">
+          <div class="top-bar-parent">
+            <div class="top-bar"></div>
+            <div class="frame-wrapper">
+              <div class="frame-parent">
+                <div class="menu-01-wrapper">
+                  <img
+                    class="menu-01-icon"
+                    loading="lazy"
+                    alt=""
+                    src="./public/menu01.svg"
+                  />
+                </div>
+                <div class="fi-br-search-wrapper">
+                  <img
+                    class="fi-br-search-icon"
+                    loading="lazy"
+                    alt=""
+                    src="./public/fibrsearch.svg"
+                  />
+                </div>
+                <div class="user-01-wrapper">
+                  <img
+                    class="user-01-icon"
+                    loading="lazy"
+                    alt=""
+                    src="./public/user01.svg"
+                  />
+                </div>
+                <div class="fi-br-shopping-cart-wrapper">
+                  <img
+                    class="fi-br-shopping-cart-icon"
+                    loading="lazy"
+                    alt=""
+                    src="./public/fibrshoppingcart.svg"
+                  />
+                </div>
+                <a href="home.html">
+                <div class="home-05-wrapper">
+                  <img
+                    class="home-05-icon"
+                    loading="lazy"
+                    alt=""
+                    src="./public/home05.svg"
+                  />
+                </div>
+                </a>
+              </div>
+            </div>
+            <div class="frame-group">
+              <div class="sign-in-wrapper">
+            <a href="login.html"><h2 class="sign-in">Sign in</h2></a>
+              </div>
+              <a href="login.html">
+              <button class="button">
+                <div class="bg"></div>
+                <div class="sign-up">Sign Up</div>
+              </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <h1 class="seamless-shopping-logo">Seamless Shopping</h1>
+      </header>
+      <section class="item-page-inner">
+        <div class="frame-container">
+          <div class="frame-div">
+            <img
+              class="frame-child"
+              loading="lazy"
+              alt=""
+              src="./public/group-33806.svg"
+            />
+
+            <img
+              class="frame-item"
+              loading="lazy"
+              alt=""
+              src="./public/group-33805.svg"
+            />
+
+            <img
+              class="frame-inner"
+              loading="lazy"
+              alt=""
+              src="./public/group-33803.svg"
+            />
+          </div>
+          <div class="frame-parent1">
+            <div class="vision-alta-mens-shoes-size-parent">
+              <h1 class="vision-alta-mens">
+                Vision Alta Men’s Shoes Size (All Colours)
+              </h1>
+              <div class="frame-parent2">
+                <div class="frame-wrapper1">
+                  <div class="nike-sneakers-parent">
+                    <h1 class="nike-sneakers">NIke Sneakers</h1>
+                    <div class="component-64-parent">
+                      <div class="component-64">
+                        <div class="uk">6 UK</div>
+                      </div>
+                      <div class="component-65">
+                        <div class="uk1">7 UK</div>
+                      </div>
+                      <div class="component-66">
+                        <div class="uk2">8 UK</div>
+                      </div>
+                      <div class="component-67">
+                        <div class="uk3">9 UK</div>
+                      </div>
+                      <div class="component-68">
+                        <div class="uk4">10 UK</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="frame-parent3">
+                  <div class="frame-wrapper2">
+                    <div class="frame-parent4">
+                      <div class="ellipse-wrapper">
+                        <div class="ellipse-div"></div>
+                      </div>
+                      <div class="frame-child1"></div>
+                      <div class="ellipse-container">
+                        <div class="frame-child2"></div>
+                      </div>
+                      <div class="frame-child3"></div>
+                    </div>
+                  </div>
+                  <h1 class="similar-products">Similar Products</h1>
+                </div>
+              </div>
+            </div>
+            <div class="frame-wrapper3">
+              <div class="frame-parent5">
+                <div class="frame-parent6">
+                  <div class="frame-parent7">
+                    <div class="frame-parent8">
+                      <div class="component-1-parent">
+                        <img
+                          class="component-1-icon"
+                          loading="lazy"
+                          alt=""
+                          src="./public/component-1.svg"
+                        />
+
+                        <img
+                          class="component-3-icon"
+                          loading="lazy"
+                          alt=""
+                          src="./public/component-3.svg"
+                        />
+
+                        <img
+                          class="component-4-icon"
+                          loading="lazy"
+                          alt=""
+                          src="./public/component-4.svg"
+                        />
+
+                        <img
+                          class="component-5-icon"
+                          loading="lazy"
+                          alt=""
+                          src="./public/component-5.svg"
+                        />
+
+                        <img
+                          class="component-1-icon1"
+                          alt=""
+                          src="./public/component-1-1.svg"
+                        />
+                      </div>
+                      <div class="wrapper">
+                        <div class="div">56,890</div>
+                      </div>
+                    </div>
+                    <div class="frame-parent9">
+                      <div class="price-label-wrapper">
+                        <div class="price-label">
+                          <div class="parent">
+                            <div class="div1">₹2,999</div>
+                            <div class="line-div"></div>
+                          </div>
+                          <div class="container">
+                            <div class="div2">₹1,500</div>
+                          </div>
+                          <div class="off">50% Off</div>
+                        </div>
+                      </div>
+                      <h1 class="product-details">Product Details</h1>
+                    </div>
+                  </div>
+                  <div class="frame-wrapper4">
+                    <div class="buy-now-parent">
+                      <a href="Checkout.html">
+                      <button class="buy-now">
+                        <div class="buy-now-child"></div>
+                        <div class="buy-now1">BUY NOW</div>
+                      </button>
+                      </a>
+                      <button class="add-to-cart">
+                        <div class="add-to-cart-child"></div>
+                        <a href="cart-page.html"> <div class="add-to-cart1">Add to Cart</div>
+                      </button>
+                    </a>
+                    </div>
+                  </div>
+                </div>
+                <h2 class="perhaps-the-most-container">
+                  <span
+                    >Perhaps the most iconic sneaker of all-time, this original
+                    "Chicago"? colorway is the cornerstone to any sneaker
+                    collection. Made famous in 1985 by Michael Jordan, the shoe
+                    has stood the test of time, becoming the most famous
+                    colorway of the Air Jordan 1. This 2015 release saw
+                    the</span
+                  >
+                  <span class="span"> ...</span>
+                  <span class="more">More</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="item-page-child">
+        <div class="info-wrapper">
+          <footer class="info">
+            <div class="info-child"></div>
+            <div class="navigation-parent">
+              <h1 class="navigation">Navigation</h1>
+              <div class="home-about-us-what-w-wrapper">
+                <h3 class="home-about-us-container">
+                  <a href="home.html">
+                  <p class="home">Home</p>
+                  </a>
+                  <p class="faq">FAQ</p>
+                  <p class="investor-relations">Investor Relations</p>
+                  <p class="jobs">Jobs</p>
+                  <p class="about-us">About Us</p>
+                  <p class="help-centre">Help Centre</p>
+                </h3>
+              </div>
+            </div>
+            <div class="info-inner">
+              <div class="contact-us-c-t-a-parent">
+                <div class="contact-us-c-t-a">
+                  <div class="talk-to-us-wrapper">
+                    <h1 class="talk-to-us">TALK TO US</h1>
+                  </div>
+                  <div class="supportapcomcom-6">
+                    <p class="rakesh22bce7907vitaspstudent">
+                      rakesh.22bce7907@vitaspstudent.ac.in
+                    </p>
+                    <p class="p">+919640761055</p>
+                  </div>
+                </div>
+                <div class="apcom-all-ri-wrapper">
+                  <h3 class="apcom-all-ri">© 2024 SS. All Rights Reserved.</h3>
+                </div>
+              </div>
+            </div>
+            <div class="info-inner1">
+              <div class="frame-parent10">
+                <div class="talk-to-us-container">
+                  <h1 class="talk-to-us1">Follow us</h1>
+                </div>
+                <div class="social-media-icons">
+                  <div class="facebook-icon">
+                    <div class="twitter-icon"></div>
+                    <img class="shape-icon" alt="" src="./public/shape.svg" />
+                  </div>
+                  <img
+                    class="linkedin-icon"
+                    loading="lazy"
+                    alt=""
+                    src="./public/linkedin-icon.svg"
+                  />
+
+                  <div class="twitter-icon1">
+                    <div class="rectangle"></div>
+                    <img
+                      class="twitter-icon2"
+                      alt=""
+                      src="./public/twitter.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="item-page.html">
+            <div class="rectangle-parent">
+              <div class="instance-child"></div>
+              <img
+                class="unsplashmhuk4se7pey-icon"
+                loading="lazy"
+                alt=""
+                src="./public/unsplashmhuk4se7pey@2x.png"
+              />
+
+              <div class="frame-wrapper5">
+                <div class="frame-parent11">
+                  <div class="nike-sneakers-wrapper">
+                    <h2 class="nike-sneakers1">NIke Sneakers</h2>
+                  </div>
+                  <div class="vision-alta-mens1">
+                    Nike Air Jordan Retro 1 Low Mystic Black
+                  </div>
+                  <div class="group">
+                    <div class="div3">₹1,900</div>
+                    <div class="component-1-group">
+                      <img
+                        class="component-1-icon2"
+                        alt=""
+                        src="./public/component-1-2.svg"
+                      />
+
+                      <img
+                        class="component-3-icon1"
+                        alt=""
+                        src="./public/component-1-2.svg"
+                      />
+
+                      <img
+                        class="component-4-icon1"
+                        alt=""
+                        src="./public/component-1-2.svg"
+                      />
+
+                      <img
+                        class="component-5-icon1"
+                        alt=""
+                        src="./public/component-1-2.svg"
+                      />
+
+                      <div class="component-1-wrapper">
+                        <img
+                          class="component-1-icon3"
+                          alt=""
+                          src="./public/component-1-3.svg"
+                        />
+                      </div>
+                      <div class="div4">46,890</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </a>
+            <a href="item-page.html">
+            <div class="rectangle-group">
+              <div class="instance-item"></div>
+              <img
+                class="unsplash76w-edo1u1e-icon"
+                loading="lazy"
+                alt=""
+                src="./public/unsplash76w-edo1u1e@2x.png"
+              />
+
+              <div class="frame-wrapper6">
+                <div class="frame-parent12">
+                  <div class="nike-sneakers-container">
+                    <h2 class="nike-sneakers2">NIke Sneakers</h2>
+                  </div>
+                  <div class="vision-alta-mens2">
+                    Mid Peach Mocha Shoes For Man White Black Pink S...
+                  </div>
+                  <div class="parent1">
+                    <div class="div5">₹1,900</div>
+                    <div class="component-1-container">
+                      <img
+                        class="component-1-icon4"
+                        alt=""
+                        src="./public/component-1-2.svg"
+                      />
+
+                      <img
+                        class="component-3-icon2"
+                        alt=""
+                        src="./public/component-1-2.svg"
+                      />
+
+                      <img
+                        class="component-4-icon2"
+                        alt=""
+                        src="./public/component-1-2.svg"
+                      />
+
+                      <img
+                        class="component-5-icon2"
+                        alt=""
+                        src="./public/component-1-2.svg"
+                      />
+
+                      <div class="component-1-frame">
+                        <img
+                          class="component-1-icon5"
+                          alt=""
+                          src="./public/component-1-3.svg"
+                        />
+                      </div>
+                      <div class="div6">2,56,890</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </a>
+            <a href="item-page.html">
+            <div class="rectangle-container">
+              <div class="instance-inner"></div>
+              <img
+                class="unsplash76w-edo1u1e-icon1"
+                alt=""
+                src="./public/unsplash76w-edo1u1e-1@2x.png"
+              />
+
+              <div class="frame-wrapper7">
+                <div class="frame-parent13">
+                  <div class="nike-sneakers-frame">
+                    <h2 class="nike-sneakers3">NIke Sneakers</h2>
+                  </div>
+                  <div class="vision-delta-mens">
+                    Mid Peach Mocha Shoes For Man White Black Pink S...
+                  </div>
+                  <div class="parent2">
+                    <div class="div7">₹2,000</div>
+                    <div class="group-div">
+                      <img
+                        class="component-1-icon6"
+                        alt=""
+                        src="./public/component-1-2.svg"
+                      />
+
+                      <img
+                        class="component-3-icon3"
+                        alt=""
+                        src="./public/component-1-2.svg"
+                      />
+
+                      <img
+                        class="component-4-icon3"
+                        alt=""
+                        src="./public/component-1-2.svg"
+                      />
+
+                      <img
+                        class="component-5-icon3"
+                        alt=""
+                        src="./public/component-1-2.svg"
+                      />
+
+                      <div class="component-1-wrapper1">
+                        <img
+                          class="component-1-icon7"
+                          alt=""
+                          src="./public/component-1-3.svg"
+                        />
+                      </div>
+                      <div class="div8">56,890</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </a>
+            <a href="item-page.html">
+            <div class="rectangle-parent1">
+              <div class="rectangle-div"></div>
+              <img
+                class="unsplashzbuws1el-50-icon"
+                loading="lazy"
+                alt=""
+                src="./public/unsplashzbuws1el-50@2x.png"
+              />
+
+              <div class="frame-wrapper8">
+                <div class="frame-parent14">
+                  <div class="nike-sneakers-wrapper1">
+                    <h2 class="nike-sneakers4">NIke Sneakers</h2>
+                  </div>
+                  <div class="vision-alta-mens3">
+                    Nike Air Jordan 1 Low Shoes For Man Basketball Sh...
+                  </div>
+                  <div class="parent3">
+                    <div class="div9">₹1,900</div>
+                    <div class="component-1-parent1">
+                      <img
+                        class="component-1-icon8"
+                        alt=""
+                        src="./public/component-1-2.svg"
+                      />
+
+                      <img
+                        class="component-3-icon4"
+                        alt=""
+                        src="./public/component-1-2.svg"
+                      />
+
+                      <img
+                        class="component-4-icon4"
+                        alt=""
+                        src="./public/component-1-2.svg"
+                      />
+
+                      <img
+                        class="component-5-icon4"
+                        alt=""
+                        src="./public/component-1-2.svg"
+                      />
+
+                      <div class="component-1-wrapper2">
+                        <img
+                          class="component-1-icon9"
+                          alt=""
+                          src="./public/component-1-3.svg"
+                        />
+                      </div>
+                      <div class="div10">1,56,890</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </a>
+            <a href="item-page.html">
+            <div class="rectangle-parent2">
+              <div class="instance-child1"></div>
+              <img
+                class="unsplashfur3lnii2jc-icon"
+                loading="lazy"
+                alt=""
+                src="./public/unsplashfur3lnii2jc@2x.png"
+              />
+
+              <div class="frame-wrapper9">
+                <div class="frame-parent15">
+                  <div class="nike-sneakers-wrapper2">
+                    <h2 class="nike-sneakers5">NIke Sneakers</h2>
+                  </div>
+                  <div class="vision-alta-mens4">
+                    Jordan 1 Hyper Royal Heavy Quality
+                  </div>
+                  <div class="parent4">
+                    <div class="div11">₹1,500</div>
+                    <div class="component-1-parent2">
+                      <img
+                        class="component-1-icon10"
+                        alt=""
+                        src="./public/component-1-2.svg"
+                      />
+
+                      <img
+                        class="component-3-icon5"
+                        alt=""
+                        src="./public/component-1-2.svg"
+                      />
+
+                      <img
+                        class="component-4-icon5"
+                        alt=""
+                        src="./public/component-1-2.svg"
+                      />
+
+                      <img
+                        class="component-5-icon5"
+                        alt=""
+                        src="./public/component-1-2.svg"
+                      />
+
+                      <div class="component-1-wrapper3">
+                        <img
+                          class="component-1-icon11"
+                          alt=""
+                          src="./public/component-1-3.svg"
+                        />
+                      </div>
+                      <div class="div12">96,890</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </a>
+          </footer>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
